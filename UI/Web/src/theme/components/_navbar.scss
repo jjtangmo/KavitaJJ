@@ -1,0 +1,14 @@
+.navbar {
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-text-color);
+    z-index: 1055;
+}
+
+
+i.fa.nav {
+    color: var(--navbar-fa-icon-color);
+}
+
+.nav-tabs .nav-link.active::before {
+  transform: scaleY(0);
+}

@@ -1,0 +1,241 @@
+{
+    "login": {
+        "title": "Логін",
+        "username": "{{common.username}}",
+        "password": "{{common.password}}",
+        "password-validation": "{{validation.password-validation}}",
+        "forgot-password": "Забули пароль?",
+        "submit": "{{common.submit}}"
+    },
+    "dashboard": {
+        "no-libraries": "Бібліотеки ще не налаштовано.",
+        "server-settings-link": "Налаштування сервера",
+        "not-granted": "Вам не надано доступу до жодної бібліотеки.",
+        "on-deck-title": "Книги на полиці",
+        "recently-updated-title": "Нещодавно оновлена серія",
+        "recently-added-title": "Нещодавно додана серія",
+        "more-in-genre-title": "Більше в {{genre}}"
+    },
+    "edit-user": {
+        "edit": "{{common.edit}}",
+        "close": "{{common.close}}",
+        "username": "{{common.username}}",
+        "required": "{{validation.required-field}}",
+        "email": "{{common.email}}",
+        "not-valid-email": "{{validation.valid-email}}",
+        "cancel": "{{common.cancel}}",
+        "saving": "Збереження…",
+        "update": "Оновлення"
+    },
+    "user-scrobble-history": {
+        "created-header": "Створено",
+        "last-modified-header": "Останні Зміни",
+        "type-header": "Тип",
+        "series-header": "Серія",
+        "volume-and-chapter-num": "Том {{v}} Розділ {{n}}",
+        "rating": "Рейтинг {{r}}"
+    },
+    "review-series-modal": {
+        "close": "{{common.close}}",
+        "save": "{{common.save}}"
+    },
+    "review-card-modal": {
+        "close": "{{common.close}}"
+    },
+    "want-to-read": {
+        "series-count": "{{common.series-count}}"
+    },
+    "user-preferences": {
+        "save": "{{common.save}}"
+    },
+    "theme-manager": {
+        "apply": "{{common.apply}}"
+    },
+    "manage-devices": {
+        "add": "{{common.add}}",
+        "delete": "{{common.delete}}",
+        "edit": "{{common.edit}}"
+    },
+    "edit-device": {
+        "email-label": "{{common.email}}",
+        "save": "{{common.save}}",
+        "required-field": "{{validation.required-field}}",
+        "valid-email": "{{validation.valid-email}}"
+    },
+    "change-password": {
+        "password-label": "{{common.password}}",
+        "reset": "{{common.reset}}",
+        "edit": "{{common.edit}}",
+        "cancel": "{{common.cancel}}",
+        "save": "{{common.save}}",
+        "required-field": "{{validation.required-field}}"
+    },
+    "change-email": {
+        "email-label": "{{common.email}}",
+        "required-field": "{{validation.required-field}}",
+        "reset": "{{common.reset}}",
+        "edit": "{{common.edit}}",
+        "cancel": "{{common.cancel}}",
+        "save": "{{common.save}}"
+    },
+    "change-age-restriction": {
+        "reset": "{{common.reset}}",
+        "edit": "{{common.edit}}",
+        "cancel": "{{common.cancel}}",
+        "save": "{{common.save}}"
+    },
+    "scrobbling-providers": {
+        "edit": "{{common.edit}}",
+        "cancel": "{{common.cancel}}",
+        "save": "{{common.save}}"
+    },
+    "typeahead": {
+        "close": "{{common.close}}",
+        "loading": "{{common.loading}}"
+    },
+    "generic-list-modal": {
+        "close": "{{common.close}}"
+    },
+    "user-stats-info-cards": {
+        "total-pages-read-tooltip": "{{user-stats-info-cards.total-pages-read-label}}: {{value}}",
+        "total-words-read-tooltip": "{{user-stats-info-cards.total-words-read-label}}: {{value}}",
+        "time-spent-reading-tooltip": "{{user-stats-info-cards.time-spent-reading-label}}: {{value}}",
+        "chapters-read-tooltip": "{{user-stats-info-cards.chapters-read-label}}: {{value}}"
+    },
+    "top-readers": {
+        "this-week": "{{time-periods.this-week}}",
+        "last-7-days": "{{time-periods.last-7-days}}",
+        "last-30-days": "{{time-periods.last-30-days}}",
+        "last-90-days": "{{time-periods.last-90-days}}",
+        "last-year": "{{time-periods.last-year}}",
+        "all-time": "{{time-periods.all-time}}"
+    },
+    "directory-picker": {
+        "close": "{{common.close}}",
+        "cancel": "{{common.cancel}}",
+        "help": "{{common.help}}"
+    },
+    "library-access-modal": {
+        "select-all": "{{common.select-all}}",
+        "deselect-all": "{{common.deselect-all}}",
+        "close": "{{common.close}}",
+        "reset": "{{common.reset}}",
+        "cancel": "{{common.cancel}}",
+        "save": "{{common.save}}"
+    },
+    "reset-password": {
+        "email-label": "{{common.email}}",
+        "required-field": "{{validation.required-field}}",
+        "valid-email": "{{validation.valid-email}}",
+        "submit": "{{common.submit}}"
+    },
+    "reset-password-modal": {
+        "close": "{{common.close}}",
+        "cancel": "{{common.cancel}}",
+        "save": "{{common.save}}"
+    },
+    "all-series": {
+        "series-count": "{{common.series-count}}"
+    },
+    "invite-user": {
+        "close": "{{common.close}}",
+        "email": "{{common.email}}",
+        "required-field": "{{common.required-field}}",
+        "cancel": "{{common.cancel}}"
+    },
+    "library-selector": {
+        "select-all": "{{common.select-all}}",
+        "deselect-all": "{{common.deselect-all}}"
+    },
+    "license": {
+        "cancel": "{{common.cancel}}",
+        "edit": "{{common.edit}}",
+        "loading": "{{common.loading}}",
+        "activate-email-label": "{{common.email}}",
+        "activate-save": "{{common.save}}"
+    },
+    "book-line-overlay": {
+        "close": "{{common.close}}",
+        "required-field": "{{common.required-field}}",
+        "save": "{{common.save}}"
+    },
+    "confirm-email": {
+        "password-label": "{{common.password}}",
+        "email-label": "{{common.email}}",
+        "required-field": "{{common.required-field}}",
+        "valid-email": "{{common.valid-email}}",
+        "password-validation": "{{validation.password-validation}}"
+    },
+    "confirm-reset-password": {
+        "password-label": "{{common.password}}",
+        "required-field": "{{validation.required-field}}",
+        "submit": "{{common.submit}}",
+        "password-validation": "{{validation.password-validation}}"
+    },
+    "register": {
+        "username-label": "{{common.username}}",
+        "email-label": "{{common.email}}",
+        "password-label": "{{common.password}}",
+        "required-field": "{{validation.required-field}}",
+        "valid-email": "{{validation.valid-email}}",
+        "password-validation": "{{validation.password-validation}}"
+    },
+    "series-detail": {
+        "close": "{{common.close}}",
+        "layout-mode-label": "{{user-preferences.layout-mode-book-label}}",
+        "read": "{{common.read}}",
+        "no-pages": "{{toasts.no-pages}}"
+    },
+    "series-metadata-detail": {
+        "collections-title": "{{side-nav.collections}}",
+        "reading-lists-title": "{{side-nav.reading-lists}}",
+        "promoted": "{{common.promoted}}"
+    },
+    "update-notification-modal": {
+        "close": "{{common.close}}"
+    },
+    "side-nav-companion-bar": {
+        "page-settings-title": "{{series-detail.page-settings-title}}"
+    },
+    "library-settings-modal": {
+        "close": "{{common.close}}",
+        "reset": "{{common.reset}}",
+        "cancel": "{{common.cancel}}",
+        "save": "{{common.save}}",
+        "required-field": "{{validation.required-field}}"
+    },
+    "reader-settings": {
+        "font-family-label": "{{user-preferences.font-family-label}}",
+        "font-size-label": "{{user-preferences.font-size-book-label}}",
+        "line-spacing-label": "{{user-preferences.line-height-book-label}}",
+        "margin-label": "{{user-preferences.margin-book-label}}",
+        "reading-direction-label": "{{user-preferences.reading-direction-book-label}}",
+        "writing-style-label": "{{user-preferences.writing-style-label}}",
+        "immersive-mode-label": "{{user-preferences.immersive-mode-label}}",
+        "layout-mode-label": "{{user-preferences.layout-mode-book-label}}"
+    },
+    "bookmarks": {
+        "title": "{{side-nav.bookmarks}}",
+        "series-count": "{{common.series-count}}"
+    },
+    "bulk-operations": {
+        "deselect-all": "{{common.deselect-all}}"
+    },
+    "card-detail-drawer": {
+        "writers-title": "{{series-metadata-detail.writers-title}}",
+        "genres-title": "{{series-metadata-detail.genres-title}}",
+        "publishers-title": "{{series-metadata-detail.publishers-title}}",
+        "tags-title": "{{series-metadata-detail.tags-title}}",
+        "read": "{{common.read}}"
+    },
+    "card-detail-layout": {
+        "total-items": "{{count}} всього елементів"
+    },
+    "chapter-metadata-detail": {
+        "writers-title": "{{series-metadata-detail.writers-title}}",
+        "publishers-title": "{{series-metadata-detail.publishers-title}}",
+        "characters-title": "{{series-metadata-detail.characters-title}}",
+        "translators-title": "{{series-metadata-detail.translators-title}}",
+        "letterers-title": "{{series-metadata-detail.letterers-title}}"
+    }
+}

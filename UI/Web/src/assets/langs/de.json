@@ -1,0 +1,909 @@
+{
+    "login": {
+        "title": "Anmelden",
+        "username": "{{common.username}}",
+        "password": "{{common.password}}",
+        "password-validation": "{{validation.password-validation}}",
+        "forgot-password": "Passwort vergessen?",
+        "submit": "{{common.submit}}"
+    },
+    "dashboard": {
+        "no-libraries": "Es sind noch keine Bibliotheken eingerichtet. Konfigurieren Sie einige in",
+        "server-settings-link": "Servereinstellungen",
+        "not-granted": "Sie haben keinen Zugang zu Bibliotheken erhalten.",
+        "on-deck-title": "Weiterlesen",
+        "recently-updated-title": "Kürzlich aktualisierte Serien",
+        "recently-added-title": "Neu hinzugefügte Serien",
+        "more-in-genre-title": "Mehr in {{genre}}"
+    },
+    "edit-user": {
+        "edit": "{{common.edit}}",
+        "close": "{{common.close}}",
+        "username": "{{common.username}}",
+        "required": "{{validation.required-field}}",
+        "email": "{{common.email}}",
+        "not-valid-email": "{{validation.valid-email}}",
+        "cancel": "{{common.cancel}}",
+        "saving": "Speichern…",
+        "update": "Aktualisierung"
+    },
+    "user-scrobble-history": {
+        "title": "Scrobble-Verlauf",
+        "description": "Hier finden Sie alle Scrobble-Ereignisse, die mit Ihrem Konto verknüpft sind. Damit es Ereignisse gibt, müssen Sie einen aktiven Scrobble-Anbieter konfiguriert haben. Alle Ereignisse, die verarbeitet wurden, werden nach einem Monat gelöscht. Wenn es nicht verarbeitete Ereignisse gibt, können diese wahrscheinlich keine Übereinstimmungen im Vorfeld finden. Wenden Sie sich bitte an Ihren Administrator, damit diese korrigiert werden.",
+        "filter-label": "{{common.filter}}",
+        "created-header": "Erstellt",
+        "last-modified-header": "Zuletzt geändert",
+        "type-header": "Typ",
+        "series-header": "Serie",
+        "data-header": "Daten",
+        "is-processed-header": "Wird verarbeitet",
+        "no-data": "Keine Daten",
+        "volume-and-chapter-num": "Band {{v}} Kapitel {{n}}",
+        "rating": "Bewertung {{r}}",
+        "not-applicable": "Nicht anwendbar",
+        "processed": "Verarbeitet",
+        "not-processed": "Nicht verarbeitet",
+        "chapter-num": "Kapitel {{num}}",
+        "volume-num": "Band {{num}}"
+    },
+    "scrobble-event-type-pipe": {
+        "chapter-read": "Lesefortschritt",
+        "score-updated": "Bewertung Aktualisierung",
+        "want-to-read-add": "Möchte ich lesen: hinzufügen",
+        "want-to-read-remove": "Möchte ich lesen: entfernen",
+        "review": "Aktualisierung überprüfung"
+    },
+    "spoiler": {
+        "click-to-show": "Spoiler, klicke zum Anzeigen"
+    },
+    "review-series-modal": {
+        "title": "Rezension bearbeiten",
+        "review-label": "Rezension",
+        "close": "{{common.close}}",
+        "save": "{{common.save}}",
+        "required": "Pflichtfeld",
+        "min-length": "Rezension muss mindestens {{count}} Zeichen lang sein"
+    },
+    "review-card-modal": {
+        "close": "{{common.close}}",
+        "user-review": "{{username}}'s Rezension",
+        "external-mod": "(extern)",
+        "go-to-review": "Zur Rezension"
+    },
+    "review-card": {
+        "your-review": "Dies ist deine Rezension",
+        "external-review": "Externe Rezension",
+        "local-review": "Lokale Rezension",
+        "rating-percentage": "Bewertung {{r}}%"
+    },
+    "want-to-read": {
+        "title": "Möchte ich lesen",
+        "series-count": "{{common.series-count}}",
+        "no-items": "Es sind keine Einträge vorhanden. Versuchen Sie, eine Serie hinzuzufügen.",
+        "no-items-filtered": "Keine Einträge entsprechen Ihrem aktuellen Filter."
+    },
+    "user-preferences": {
+        "title": "Benutzer Dashboard",
+        "pref-description": "Dies sind globale Einstellungen, die an Ihr Konto gebunden sind.",
+        "account-tab": "Konto",
+        "preferences-tab": "Präferenzen",
+        "3rd-party-clients-tab": "Drittanbieter Clienten",
+        "theme-tab": "Motiv",
+        "devices-tab": "Geräte",
+        "stats-tab": "Statistiken",
+        "scrobbling-tab": "Scrobbling",
+        "success-toast": "Benutzerpräferenzen aktualisiert",
+        "global-settings-title": "Globale Einstellungen",
+        "page-layout-mode-label": "Seitenlayoutmodus",
+        "page-layout-mode-tooltip": "Zeige Elemente als Kachel oder in der Listenansicht auf der Seriendetails Seite an.",
+        "locale-label": "Lokal",
+        "locale-tooltip": "Die Sprache, die Kavita verwenden soll",
+        "blur-unread-summaries-label": "Ungelesene Zusammenfassungen verschleiern",
+        "blur-unread-summaries-tooltip": "Blendet den Zusammenfassungstext bei Bänden oder Kapiteln aus, die noch nicht gelesen wurden (um Spoiler zu vermeiden)",
+        "prompt-on-download-label": "Aufforderung beim Herunterladen",
+        "prompt-on-download-tooltip": "Aufforderung, wenn ein Download die Größe von {{size}}MB überschreitet",
+        "disable-animations-label": "Animationen deaktivieren",
+        "disable-animations-tooltip": "Schaltet die Animationen auf der Website aus. Nützlich für E-Ink-Leser.",
+        "collapse-series-relationships-label": "Serienbeziehungen reduzieren",
+        "collapse-series-relationships-tooltip": "Sollte Kavita Serien zeigen, die keine Verbindungen haben, oder ist das Elternteil/Prequel",
+        "share-series-reviews-label": "Bewertungen von Serien teilen",
+        "share-series-reviews-tooltip": "Soll Kavita deine Rezensionen zu Serien für andere Nutzer aufnehmen",
+        "image-reader-settings-title": "Bildleser",
+        "reading-direction-label": "Leserichtung",
+        "reading-direction-tooltip": "Richtung, in die geklicken werden müssen, um zur nächsten Seite zu gelangen. Von rechts nach links bedeutet, dass man auf die linke Seite des Bildschirms klickt, um zur nächsten Seite zu gelangen.",
+        "scaling-option-label": "Skalierungsoptionen",
+        "scaling-option-tooltip": "So wird das Bild auf den Bildschirm skaliert.",
+        "page-splitting-label": "Seitenaufteilung",
+        "page-splitting-tooltip": "Wie wird ein Bild in voller Breite geteilt (d.h. linkes und rechtes Bild werden kombiniert)",
+        "reading-mode-label": "Lesemodus",
+        "layout-mode-label": "Layoutmodus",
+        "layout-mode-tooltip": "Rendert ein einzelnes Bild auf dem Bildschirm oder zwei nebeneinander liegende Bilder",
+        "background-color-label": "Hintergrundfarbe",
+        "auto-close-menu-label": "Menü Automatisch schließen",
+        "show-screen-hints-label": "Bildschirmtipps anzeigen",
+        "emulate-comic-book-label": "Comicbuch nachbilden",
+        "swipe-to-paginate-label": "Zum Umblättern wischen",
+        "book-reader-settings-title": "Buch-Reader",
+        "tap-to-paginate-label": "Tippen zum Umblättern",
+        "tap-to-paginate-tooltip": "Sollten die Seiten des Buchlesebildschirms ein Antippen erlauben, um zur vorherigen/nächsten Seite zu gelangen",
+        "immersive-mode-label": "Immersiver Modus",
+        "immersive-mode-tooltip": "Das Menü wird nach einem Klick auf das Reader-Dokument ausgeblendet und das Tippen zum Umblättern eingeschaltet",
+        "reading-direction-book-label": "Leserichtung",
+        "reading-direction-book-tooltip": "Richtung, in die zu klicken ist, um zur nächsten Seite zu gelangen. Von rechts nach links bedeutet, dass man auf die linke Seite des Bildschirms klickt, um zur nächsten Seite zu gelangen.",
+        "font-family-label": "Schriftart",
+        "font-family-tooltip": "Schriftart, die geladen werden soll. Standard lädt die Standardschriftart des Buches",
+        "writing-style-label": "Schreibstil",
+        "writing-style-tooltip": "Ändert die Richtung des Textes. Horizontal ist von links nach rechts, vertikal von oben nach unten.",
+        "layout-mode-book-label": "Layoutmodus",
+        "layout-mode-book-tooltip": "Wie soll der Inhalt aufgebaut sein. Scrollen ist so, wie das Buch es verpackt. 1- oder 2-spaltig entspricht der Höhe des Geräts und fasst 1 oder 2 Spalten Text pro Seite",
+        "color-theme-book-label": "Farbe Motiv",
+        "color-theme-book-tooltip": "Welches Farb Motiv soll für den Inhalt und das Menü des Buchlesers verwendet werden",
+        "font-size-book-label": "Schriftgröße",
+        "line-height-book-label": "Zeilenabstände",
+        "line-height-book-tooltip": "Wie viel Abstand zwischen den Zeilen im Buch",
+        "margin-book-label": "Seitenrand",
+        "margin-book-tooltip": "Wie viel Abstand auf jeder Seite des Bildschirms. Auf mobilen Geräten wird dieser Wert unabhängig von dieser Einstellung auf 0 gesetzt.",
+        "clients-opds-alert": "OPDS ist auf diesem Server nicht aktiviert. Tachiyomi-Benutzer sind davon nicht betroffen.",
+        "clients-opds-description": "Alle Clienten von Drittanbietern verwenden entweder den API-Schlüssel oder die unten stehende Verbindungsurl. Diese sind wie Passwörter, vertraulich behandeln.",
+        "clients-api-key-tooltip": "Der API-Schlüssel ist wie ein Passwort. Bitte vertraulich behandeln.",
+        "clients-opds-url-tooltip": "OPDS URL",
+        "reset": "{{common.reset}}",
+        "save": "{{common.save}}",
+        "smart-filters-tab": "Smarte Filter"
+    },
+    "user-holds": {
+        "title": "Scrobble pausiert",
+        "description": "Dies ist eine vom Benutzer verwaltete Liste von Serien, die nicht an Upstream-Anbieter übertragen wird. Sie können eine Serie jederzeit entfernen und das nächste Scrobble-fähige Ereignis (Lesefortschritt, Bewertung, Lesewunschstatus) wird Ereignisse auslösen."
+    },
+    "theme-manager": {
+        "title": "Motiv-Manager",
+        "looking-for-theme": "Suchen Sie nach einem Licht- oder E-Ink-Thema? Wir haben einige benutzerdefinierte Themen, die Sie auf unserer Website verwenden können ",
+        "looking-for-theme-continued": "Motiv github.",
+        "scan": "durchsuchen",
+        "site-themes": "Webseiten Motiv",
+        "set-default": "Standard festlegen",
+        "apply": "{{common.apply}}",
+        "applied": "Angewandt",
+        "updated-toastr": "Der Standardwert der Seite wurde auf {{name}} aktualisiert",
+        "scan-queued": "Eine Website-Motivsuche wurde in die Warteschlange gestellt"
+    },
+    "theme": {
+        "theme-dark": "dunkel",
+        "theme-black": "schwarz",
+        "theme-paper": "Papier",
+        "theme-white": "weiß"
+    },
+    "restriction-selector": {
+        "title": "Altersbeschränkung",
+        "description": "Wenn diese Option ausgewählt ist, werden alle Serien und Leselisten, die mindestens einen Eintrag enthalten, das größer ist als die ausgewählte Einschränkung, aus den Suchergebnissen entfernt.",
+        "not-applicable-for-admins": "Admins sind davon nicht betroffen.",
+        "age-rating-label": "Altersfreigabe",
+        "no-restriction": "Keine Einschränkung",
+        "include-unknowns-label": "Unbekannte einbeziehen",
+        "include-unknowns-tooltip": "Falls wahr, werden unbekannte Medien mit Altersbeschränkung zugelassen. Dies könnte dazu führen, dass nicht gekennzeichnete Medien an Benutzer mit Altersbeschränkungen durchsickern."
+    },
+    "site-theme-provider-pipe": {
+        "system": "System",
+        "user": "Benutzer"
+    },
+    "manage-devices": {
+        "title": "Gerätemanager",
+        "description": "In diesem Abschnitt können Sie Geräte einrichten, die sich nicht über einen Webbrowser mit Kavita verbinden können und stattdessen eine E-Mail-Adresse haben, die Dateien annimmt.",
+        "devices-title": "Geräte",
+        "no-devices": "Es ist noch kein Gerät eingerichtet",
+        "platform-label": "Plattform: ",
+        "email-label": "E-Mail: ",
+        "add": "{{common.add}}",
+        "delete": "{{common.delete}}",
+        "edit": "{{common.edit}}",
+        "email-setup-alert": "Möchtest du Dateien an deine Geräte senden? Lasse von deinen Admin vorerst die E-Mail-Einstellungen konfigurieren!"
+    },
+    "edit-device": {
+        "device-name-label": "Gerätename",
+        "email-label": "{{common.email}}",
+        "email-tooltip": "Diese E-Mail wird verwendet, um die Datei über \"Senden an\" anzunehmen",
+        "device-platform-label": "Geräteplattform",
+        "save": "{{common.save}}",
+        "required-field": "{{validation.required-field}}",
+        "valid-email": "{{validation.valid-email}}"
+    },
+    "change-password": {
+        "password-label": "{{common.password}}",
+        "current-password-label": "Aktuelles Passwort",
+        "new-password-label": "Neues Passwort",
+        "confirm-password-label": "Passwort bestätigen",
+        "reset": "{{common.reset}}",
+        "edit": "{{common.edit}}",
+        "cancel": "{{common.cancel}}",
+        "save": "{{common.save}}",
+        "required-field": "{{validation.required-field}}",
+        "passwords-must-match": "Passwörter müssen übereinstimmen",
+        "permission-error": "Sie haben nicht die Erlaubnis, Ihr Passwort zu ändern. Wenden Sie sich an den Administrator des Servers."
+    },
+    "change-email": {
+        "email-label": "Neue E-Mail",
+        "current-password-label": "Aktuelles Passwort",
+        "email-not-confirmed": "Diese E-Mail-Adresse ist nicht bestätigt",
+        "email-updated-title": "E-Mail Adresse aktualisiert",
+        "email-updated-description": "Sie können den folgenden Link verwenden um ihre Email für ihren Account zu verifizieren. Wenn Ihr Server extern erreichbar ist, wurde eine Mail an ihre Addresse gesendet und der Link kann genutzt werden um sie zu bestätigen.",
+        "setup-user-account": "User Account einrichten",
+        "invite-url-label": "Einladungs URL",
+        "invite-url-tooltip": "Kopieren Sie dies und fügen Sie es in einem neuen Tab ein",
+        "permission-error": "Sie haben keine Berechtigung ihre Email Addresse zu ändern. Bitte wenden Sie sich an den Admin des Servers.",
+        "required-field": "{{validation.required-field}}",
+        "reset": "{{common.reset}}",
+        "edit": "{{common.edit}}",
+        "cancel": "{{common.cancel}}",
+        "save": "{{common.save}}",
+        "has-invalid-email": "Es scheint Sie haben keine gültige E-Mail angegeben. Ändern Sie die E-Mail, so muss Ihnen der Admin zur Bestätigung einen Link zusenden.",
+        "valid-email": "Gültige E-Mail Adresse",
+        "email-confirmed": "Diese E-Mail ist bestätigt worden",
+        "email-title": "E-Mail"
+    },
+    "change-age-restriction": {
+        "age-restriction-label": "Altersbeschränkung",
+        "unknowns": "Unbekannt",
+        "reset": "{{common.reset}}",
+        "edit": "{{common.edit}}",
+        "cancel": "{{common.cancel}}",
+        "save": "{{common.save}}"
+    },
+    "api-key": {
+        "copy": "Kopie",
+        "regen-warning": "Wenn Sie Ihren API-Schlüssel neu generieren, werden alle bestehenden Klienten ungültig.",
+        "no-key": "ERROR - SCHLÜSSEL NICHT GESETZT",
+        "confirm-reset": "Alle bereits eingerichteten OPDS-Konfigurationen werden ungültig. Sind Sie sicher, dass Sie fortfahren möchten?",
+        "key-reset": "API Schlüssel zurückgesetzt",
+        "hide": "Ausblenden",
+        "show": "Anzeigen"
+    },
+    "scrobbling-providers": {
+        "title": "Scrobbling Anbieter",
+        "requires": "Diese Funktion benötigt eine aktive {{product}} Lizenz",
+        "token-expired": "Token Abgelaufen",
+        "no-token-set": "Kein Token eingestellt",
+        "generate": "Generieren",
+        "instructions": "Erstnutzer sollten unten auf \"{{scrobbling-providers.generate}}\" klicken, um Kavita+ die Kommunikation mit {{service}} zu erlauben. Sobald Sie das Programm autorisiert haben, kopieren Sie den Token und fügen ihn in das untere Feld ein. Sie können Ihren Token jederzeit neu erzeugen.",
+        "token-input-label": "{{Service}} Token hier einfügen",
+        "edit": "{{common.edit}}",
+        "cancel": "{{common.cancel}}",
+        "save": "{{common.save}}",
+        "token-set": "Token festgelegt",
+        "token-valid": "Der Token ist valide"
+    },
+    "typeahead": {
+        "locked-field": "Feld ist gesperrt",
+        "close": "{{common.close}}",
+        "loading": "Lädt",
+        "add-item": "Hinzufügen {{item}}…",
+        "no-data": "Keine Daten",
+        "add-custom-item": ", tippen um benutzerdefiniertes Element hinzuzufügen"
+    },
+    "generic-list-modal": {
+        "close": "Schließen",
+        "open-filtered-search": "Öffnen Sie eine gefilterte Suche nach {{item}}",
+        "clear": "{{common.clear}}",
+        "filter": "{{common.filter}}"
+    },
+    "user-stats-info-cards": {
+        "total-pages-read-label": "Insgesamt gelesene Seiten",
+        "total-pages-read-tooltip": "Seiten gelesen (gesamt): {{value}}",
+        "total-words-read-label": "Insgesamt gelesene Wörter",
+        "total-words-read-tooltip": "Wörter gelesen: {{value}}",
+        "time-spent-reading-tooltip": "Lesezeit: {{value}}",
+        "chapters-read-label": "Gelesene Kapitel",
+        "chapters-read-tooltip": "Gelesene Kapitel: {{value}}",
+        "avg-reading-per-week-label": "Durchschnittlich gelesen / Woche",
+        "chapters": "{{value}} Kapitel",
+        "time-spent-reading-label": "Lesezeit",
+        "last-active-label": "Zuletzt aktiv"
+    },
+    "user-stats": {
+        "library-read-progress-title": "Lesefortschritt der Bibliothek",
+        "read-percentage": "% gelesen"
+    },
+    "top-readers": {
+        "time-selection-label": "Zeitfenster",
+        "comics-label": "Comics: {{value}} Std",
+        "this-week": "Diese Woche",
+        "last-7-days": "Letzte 7 Tage",
+        "last-30-days": "Letzte 30 Tage",
+        "last-90-days": "Letzte 90 Tage",
+        "last-year": "Letztes Jahr",
+        "all-time": "Gesamte Zeit",
+        "books-label": "Bücher: {{value}} Std.",
+        "manga-label": "Manga: {{value}} Std.",
+        "title": "Top Leser"
+    },
+    "role-selector": {
+        "title": "Rollen"
+    },
+    "directory-picker": {
+        "title": "Wählen Sie ein Verzeichnis",
+        "close": "Schließen",
+        "path-label": "Pfad",
+        "name-header": "Name",
+        "cancel": "Abbrechen",
+        "help": "Hilfe",
+        "type-header": "Typ",
+        "share": "Teilen",
+        "path-placeholder": "Lostippen oder Pfad auswählen",
+        "instructions": "Wähle ein Verzeichnis um den Pfad zu sehen. Verzeichnis nicht sichtbar? Versuche zuerst \"/\"."
+    },
+    "library-access-modal": {
+        "select-all": "Alles auswählen",
+        "deselect-all": "Nichts auswählen",
+        "close": "Schließen",
+        "reset": "Zurücksetzen",
+        "cancel": "Abbrechen",
+        "save": "Speichern",
+        "no-data": "Es sind noch keine Bibliotheken eingerichtet.",
+        "title": "Zugriff auf Bibliotek"
+    },
+    "time-periods": {
+        "this-week": "Diese Woche",
+        "last-7-days": "Letzte 7 Tage",
+        "last-30-days": "Letzte 30 Tage",
+        "last-90-days": "Letzte 90 Tage",
+        "last-year": "Letztes Jahr",
+        "all-time": "Gesamte Zeit"
+    },
+    "device-platform-pipe": {
+        "custom": "Benutzerdefiniert"
+    },
+    "day-of-week-pipe": {
+        "monday": "Montag",
+        "tuesday": "Dienstag",
+        "wednesday": "Mittwoch",
+        "thursday": "Donnerstag",
+        "friday": "Freitag",
+        "saturday": "Samstag",
+        "sunday": "Sonntag"
+    },
+    "cbl-import-result-pipe": {
+        "success": "Erfolgreich",
+        "partial": "Teilweise",
+        "failure": "Fehlgeschlagen"
+    },
+    "cbl-conflict-reason-pipe": {
+        "series-collision": "Die Serie {{seriesLink}} kollidiert mit einer anderen Serie gleichen Namens in einer anderen Bibliothek.",
+        "series-missing": "Die Serie, {{series}}, ist in Kavita nicht vorhanden oder Sie haben nicht die nötigen Rechte. Alle Elemente dieser Serie werden beim Import übersprungen.",
+        "invalid-file": "Die Datei ist beschädigt oder entspricht nicht den erwarteten Tags/Spezifikationen.",
+        "volume-missing": "{{series}}: Band {{volume}} ist in Kavita nicht vorhanden oder Sie haben nicht die nötigen Rechte. Alle Elemente dieses Bandes werden übersprungen.",
+        "all-series-missing": "Sie haben keinen Zugriff auf alle Serien in dieser Liste oder Kavita hat nichts in dieser Liste gespeichert.",
+        "empty-file": "Die CBL-Datei ist leer, es gibt nichts zu tun.",
+        "name-conflict": "Die Leseliste {{readingListName}} exisitiert bereits auf diesem Konto, welche zu der CBL-Datei passt.",
+        "success": "{{series}} Band {{volume}} Kapitel {{chapter}} erfolgreich zugeordnet.",
+        "all-chapter-missing": "Nicht alle Kapitel konnten zu Kapiteln in Kavita zugeordnet werden.",
+        "chapter-missing": "{{series}}: Kapitel {{chapter}} ist nicht in Kavita vorhanden. Dieses Element wird übersprungen."
+    },
+    "time-duration-pipe": {
+        "hours": "{{value}} Stunden",
+        "minutes": "{{value}} Minuten",
+        "days": "{{value}} Tage",
+        "months": "{{value}} Monate",
+        "years": "{{value}} Jahre"
+    },
+    "time-ago-pipe": {
+        "min-ago": "vor einer Minute",
+        "mins-ago": "vor {{value}} Minuten",
+        "hour-ago": "vor einer Stunde",
+        "hours-ago": "vor {{value}} Stunden",
+        "day-ago": "vor einem Tag",
+        "days-ago": "vor {{value}} Tagen",
+        "month-ago": "vor einem Monat",
+        "months-ago": "vor {{value}} Monaten",
+        "year-ago": "vor einem Jahr",
+        "years-ago": "vor {{value}} Jahren",
+        "never": "Niemals",
+        "just-now": "jetzt gerade"
+    },
+    "relationship-pipe": {
+        "character": "Charakter",
+        "alternative-version": "Alternative Version",
+        "prequel": "Prequel",
+        "adaptation": "Adaption",
+        "alternative-setting": "Alternatives Setting",
+        "side-story": "Nebengeschichte",
+        "spin-off": "Ableger",
+        "contains": "Beinhaltet",
+        "sequel": "Nachfolger",
+        "doujinshi": "Doujinshi",
+        "other": "Andere"
+    },
+    "reset-password": {
+        "email-label": "{{common.email}}",
+        "required-field": "{{validation.required-field}}",
+        "valid-email": "{{validation.valid-email}}",
+        "submit": "{{common.submit}}",
+        "title": "Password-Zurücksetzung"
+    },
+    "reset-password-modal": {
+        "close": "{{common.close}}",
+        "cancel": "{{common.cancel}}",
+        "save": "{{common.save}}",
+        "new-password-label": "Neues Passwort",
+        "title": "Setze {{username}}s Passwort zurück"
+    },
+    "all-series": {
+        "series-count": "{{common.series-count}}",
+        "title": "Alle Serien"
+    },
+    "invite-user": {
+        "close": "{{common.close}}",
+        "email": "{{common.email}}",
+        "required-field": "{{common.required-field}}",
+        "setup-user-description": "Sie können den folgenden Link verwenden, um das Konto für Ihren Benutzer einzurichten, oder die Taste \"Kopieren\" verwenden. Möglicherweise müssen Sie sich erst abmelden, bevor Sie den Link zur Registrierung eines neuen Benutzers verwenden können. Wenn Ihr Server von außen erreichbar ist, wurde eine E-Mail an den Benutzer gesendet und die Links können von diesem verwendet werden, um die Einrichtung des Kontos abzuschließen.",
+        "cancel": "{{common.cancel}}",
+        "setup-user-title": "Nutzer wurde eingeladen",
+        "invite": "Einladung",
+        "setup-user-account-tooltip": "Kopiere dies und füge es in einem neuen Tab ein. Du musst dich vielleicht abmelden.",
+        "title": "Lade einen Nutzer ein",
+        "invite-url-label": "Einladungs-URL",
+        "inviting": "Lade ein…"
+    },
+    "library-selector": {
+        "title": "Bibliotheken",
+        "select-all": "{{common.select-all}}",
+        "deselect-all": "{{common.deselect-all}}",
+        "no-data": "Bisher wurde noch keine Bibliothek aufgesetzt."
+    },
+    "license": {
+        "title": "Kavita+ Lizenz",
+        "check": "Überprüfen",
+        "cancel": "{{common.cancel}}",
+        "edit": "{{common.edit}}",
+        "buy": "Kaufen",
+        "activate": "Aktivieren",
+        "loading": "{{common.loading}}",
+        "activate-description": "Geben Sie den Lizenzschlüssel und die E-Mail-Adresse ein, die Sie bei der Registrierung bei Stripe verwendet haben",
+        "activate-license-label": "Lizenzschlüssel",
+        "activate-email-label": "{{common.email}}",
+        "activate-delete": "Löschen",
+        "activate-save": "{{common.save}}",
+        "license-not-valid": "Lizenz ist nicht valide",
+        "activate-discordId-tooltip": "Verbinde deinen Discord-Account mit Kavita+. Dies gewährt dir Zugriff auf versteckte Kanäle, um Kavita mitzugestalten.",
+        "activate-discordId-label": "Discord Nutzer ID",
+        "no-license-key": "Kein Lizenz-Schlüssel",
+        "renew": "Erneuern",
+        "license-valid": "Lizenz ist valide",
+        "manage": "Verwalten",
+        "discord-validation": "Dies ist keine valide Discord-User-ID. Deine User ID ist nicht dein Discord-Benutzername.",
+        "invalid-license-tooltip": "Wenn dein Abonnement beendet ist, musst du den Support per E-Mail kontaktieren um ein neues Abonnement abzuschließen"
+    },
+    "book-line-overlay": {
+        "copy": "Kopieren",
+        "bookmark": "Lesezeichen",
+        "close": "{{common.close}}",
+        "required-field": "{{common.required-field}}",
+        "bookmark-label": "Lesezeichen Name",
+        "save": "{{common.save}}"
+    },
+    "book-reader": {
+        "next-page": "Nächste Seite",
+        "prev-chapter": "Vorheriges Kapitel/Band",
+        "next-chapter": "Nächstes Kapitel/Band",
+        "skip-header": "Zum Hauptinhalt springen",
+        "settings-header": "Einstellungen",
+        "table-of-contents-header": "Inhaltsverzeichnis",
+        "bookmarks-header": "Lesezeichen",
+        "loading-book": "Buch wird geladen…",
+        "next": "Nächste",
+        "previous": "Vorherige",
+        "go-to-page-prompt": "Es gibt {{totalPages}} Seiten. Auf welche Seite möchten sie gehen?"
+    },
+    "personal-table-of-contents": {
+        "page": "Seite {{value}}",
+        "delete": "Löschen {{bookmarkName}}",
+        "no-data": "Noch nichts mit Lesezeichen versehen"
+    },
+    "confirm-email": {
+        "title": "Registrieren",
+        "description": "Füllen Sie das Formular aus, um Ihre Registrierung abzuschließen",
+        "username-label": "{{common.username}}",
+        "password-label": "{{common.password}}",
+        "email-label": "{{common.email}}",
+        "required-field": "{{common.required-field}}",
+        "valid-email": "{{common.valid-email}}",
+        "password-validation": "{{validation.password-validation}}"
+    },
+    "confirm-email-change": {
+        "title": "E-Mail-Änderung bestätigen",
+        "non-confirm-description": "Bitte warten Sie, während Ihre E-Mail-Aktualisierung bestätigt wird.",
+        "confirm-description": "Ihre E-Mail wurde bestätigt und ist nun in Kavita geändert. Sie werden nun zur Anmeldung weitergeleitet."
+    },
+    "confirm-reset-password": {
+        "title": "Passwort Zurücksetzen",
+        "password-label": "{{common.password}}",
+        "required-field": "{{validation.required-field}}",
+        "submit": "{{common.submit}}",
+        "password-validation": "{{validation.password-validation}}",
+        "description": "Geben sie das neue Passwort ein"
+    },
+    "register": {
+        "title": "Registrieren",
+        "description": "Füllen Sie das Formular aus, um ein Administratorkonto zu registrieren",
+        "username-label": "{{common.username}}",
+        "email-label": "{{common.email}}",
+        "email-tooltip": "Die E-Mail muss keine echte Adresse sein, sondern ermöglicht den Zugriff auf vergesse Passwörter. Sie wird nicht außerhalb des Servers versendet, es sei denn, Passwort vergessen wird ohne einen benutzerdefinierten E-Mail-Service-Host verwendet.",
+        "password-label": "{{common.password}}",
+        "required-field": "{{validation.required-field}}",
+        "valid-email": "{{validation.valid-email}}",
+        "password-validation": "{{validation.password-validation}}"
+    },
+    "series-detail": {
+        "page-settings-title": "Seiteneinstellungen",
+        "close": "{{common.close}}",
+        "layout-mode-label": "{{user-preferences.layout-mode-book-label}}",
+        "read": "{{common.read}}",
+        "continue": "Fortsetzen",
+        "downloading-status": "wird heruntergeladen…",
+        "user-reviews-alt": "Benutzerbewertungen",
+        "books-tab": "Bücher",
+        "volumes-tab": "Bände",
+        "specials-tab": "Specials",
+        "related-tab": "Zugehörig",
+        "recommendations-tab": "Empfehlungen",
+        "no-pages": "{{toasts.no-pages}}",
+        "no-chapters": "Zu diesem Band gibt es keine Kapitel. Kann nicht gelesen werden.",
+        "cover-change": "Es kann bis zu einer Minute dauern, bis Ihr Browser das Bild aktualisiert hat. Bis dahin kann auf einigen Seiten noch das alte Bild angezeigt werden.",
+        "read-options-alt": "Leseeinstellungen"
+    },
+    "series-metadata-detail": {
+        "links-title": "Links",
+        "genres-title": "Genres",
+        "tags-title": "Tags",
+        "collections-title": "{{side-nav.collections}}",
+        "reading-lists-title": "{{side-nav.reading-lists}}",
+        "promoted": "{{common.promoted}}"
+    },
+    "read-more": {
+        "read-more": "Mehr lesen",
+        "read-less": "Weniger lesen"
+    },
+    "update-notification-modal": {
+        "title": "Neue Version verfügbar!",
+        "close": "{{common.close}}"
+    },
+    "side-nav-companion-bar": {
+        "page-settings-title": "{{series-detail.page-settings-title}}"
+    },
+    "side-nav": {
+        "bookmarks": "Lesezeichen",
+        "filter-label": "Filter",
+        "donate": "Spenden",
+        "reading-lists": "Leselisten"
+    },
+    "library-settings-modal": {
+        "close": "{{common.close}}",
+        "type-label": "Typ",
+        "manage-reading-list-label": "Leselisten verwalten",
+        "manage-reading-list-tooltip": "Soll Kavita Leselisten aus den Tags StoryArc/StoryArcNumber und AlternativeSeries/AlternativeCount in den ComicInfo.xml/opf-Dateien erstellen",
+        "reset": "{{common.reset}}",
+        "cancel": "{{common.cancel}}",
+        "next": "Nächste",
+        "save": "{{common.save}}",
+        "required-field": "{{validation.required-field}}"
+    },
+    "reader-settings": {
+        "font-family-label": "{{user-preferences.font-family-label}}",
+        "font-size-label": "{{user-preferences.font-size-book-label}}",
+        "line-spacing-label": "{{user-preferences.line-height-book-label}}",
+        "margin-label": "{{user-preferences.margin-book-label}}",
+        "reset-to-defaults": "Auf Standardwerte zurücksetzen",
+        "reader-settings-title": "Reader-Einstellungen",
+        "reading-direction-label": "{{user-preferences.reading-direction-book-label}}",
+        "writing-style-label": "{{user-preferences.writing-style-label}}",
+        "on": "An",
+        "off": "Aus",
+        "immersive-mode-label": "{{user-preferences.immersive-mode-label}}",
+        "layout-mode-label": "{{user-preferences.layout-mode-book-label}}",
+        "theme-dark": "dunkel"
+    },
+    "bookmarks": {
+        "title": "{{side-nav.bookmarks}}",
+        "series-count": "{{common.series-count}}"
+    },
+    "bulk-operations": {
+        "deselect-all": "{{common.deselect-all}}"
+    },
+    "card-detail-drawer": {
+        "writers-title": "{{series-metadata-detail.writers-title}}",
+        "genres-title": "{{series-metadata-detail.genres-title}}",
+        "publishers-title": "{{series-metadata-detail.publishers-title}}",
+        "tags-title": "{{series-metadata-detail.tags-title}}",
+        "read": "{{common.read}}"
+    },
+    "chapter-metadata-detail": {
+        "writers-title": "{{series-metadata-detail.writers-title}}",
+        "publishers-title": "{{series-metadata-detail.publishers-title}}",
+        "characters-title": "{{series-metadata-detail.characters-title}}",
+        "translators-title": "{{series-metadata-detail.translators-title}}",
+        "letterers-title": "{{series-metadata-detail.letterers-title}}",
+        "colorists-title": "{{series-metadata-detail.colorists-title}}",
+        "inkers-title": "{{series-metadata-detail.inkers-title}}",
+        "pencillers-title": "{{series-metadata-detail.pencillers-title}}",
+        "cover-artists-title": "{{series-metadata-detail.cover-artists-title}}",
+        "editors-title": "{{series-metadata-detail.editors-title}}"
+    },
+    "cover-image-chooser": {
+        "reset": "{{common.reset}}",
+        "apply": "{{common.apply}}",
+        "applied": "{{theme-manager.applied}}"
+    },
+    "edit-series-relation": {
+        "parent": "{{relationship-pipe.parent}}"
+    },
+    "entity-info-cards": {
+        "tags-title": "{{series-metadata-detail.tags-title}}",
+        "characters-title": "{{series-metadata-detail.characters-title}}",
+        "release-date-title": "Veröffentlichung",
+        "release-date-tooltip": "Erscheinungsdatum",
+        "age-rating-title": "Altersfreigabe",
+        "length-title": "Länge",
+        "pages-count": "{{num}} Seiten",
+        "words-count": "{{num}} Wörter",
+        "reading-time-title": "Lesezeit",
+        "date-added-title": "Hinzugefügt",
+        "size-title": "Größe",
+        "id-title": "ID",
+        "links-title": "{{series-metadata-detail.links-title}}",
+        "isbn-title": "ISBN",
+        "last-read-title": "Zuletzt gelesen",
+        "less-than-hour": "<1 Stunde",
+        "range-hours": "{{value}} {{hourWord}}",
+        "hour": "Stunde",
+        "hours": "Stunden",
+        "read-time-title": "{{series-info-cards.read-time-title}}"
+    },
+    "series-info-cards": {
+        "release-date-title": "{{entity-info-cards.release-date-title}}",
+        "release-year-tooltip": "Erscheinungsjahr",
+        "age-rating-title": "{{entity-info-cards.age-rating-title}}",
+        "language-title": "Sprache",
+        "publication-status-title": "Veröffentlichung",
+        "publication-status-tooltip": "Status der Veröffentlichung",
+        "scrobbling-title": "Scrobbling",
+        "scrobbling-tooltip": "Scrobbling Status",
+        "on": "An",
+        "off": "Aus",
+        "disabled": "Deaktiviert",
+        "format-title": "Format",
+        "last-read-title": "Zuletzt gelesen",
+        "length-title": "Länge",
+        "read-time-title": "Lesezeit",
+        "less-than-hour": "{{entity-info-cards.less-than-hour}}",
+        "hour": "{{entity-info-cards.hour}}",
+        "hours": "{{entity-info-cards.hours}}",
+        "time-left-title": "Verbleibende Zeit",
+        "ongoing": "{{publication-status-pipe.ongoing}}",
+        "pages-count": "{{entity-info-cards.pages-count}}",
+        "words-count": "{{entity-info-cards.words-count}}"
+    },
+    "bulk-add-to-collection": {
+        "title": "Zur Sammlung hinzufügen",
+        "promoted": "{{common.promoted}}",
+        "close": "{{common.close}}",
+        "filter-label": "Filter",
+        "clear": "{{common.clear}}",
+        "no-data": "Noch keine Sammlungen erstellt",
+        "loading": "{{common.loading}}",
+        "collection-label": "Sammlung",
+        "create": "{{common.create}}"
+    },
+    "entity-title": {
+        "special": "Spezial",
+        "issue-num": "Fehler #",
+        "chapter": "Kapitel"
+    },
+    "external-series-card": {
+        "open-external": "Extern öffnen"
+    },
+    "list-item": {
+        "read": "{{common.read}}"
+    },
+    "manage-alerts": {
+        "description-part-1": "Diese Tabelle enthält Fehler, die beim Scannen oder Einlesen Ihrer Medien gefunden wurden. Diese Liste ist nicht verwaltet. Sie können sie jederzeit löschen und mit Library (Erzwingen) Scan eine Analyse durchführen. Eine Liste mit einigen häufigen Fehlern und deren Bedeutung finden Sie unter der Seite ",
+        "description-part-2": "Wiki.",
+        "filter-label": "Filter",
+        "clear-alerts": "Warnungen löschen",
+        "extension-header": "Erweiterung",
+        "file-header": "Datei",
+        "comment-header": "Kommentar",
+        "details-header": "Einzelheiten"
+    },
+    "manage-email-settings": {
+        "title": "E-Mail-Dienste (SMTP)",
+        "description": "Kavita wird mit einem E-Mail-Service ausgeliefert, der Aufgaben wie das Einladen von Benutzern, das Zurücksetzen von Passwörtern usw. ermöglicht. E-Mails, die über unseren Dienst gesendet werden, werden sofort gelöscht. Sie können Ihren eigenen E-Mail-Dienst verwenden, indem Sie den {{link}}  Dienst einrichten. Geben Sie die URL des E-Mail-Dienstes an und verwenden Sie die Taste Testen, um sicherzustellen, dass es funktioniert. Sie können diese Einstellungen jederzeit auf die Standardwerte zurücksetzen. Es gibt keine Möglichkeit, E-Mails für die Authentifizierung zu deaktivieren, wobei Sie nicht verpflichtet sind, eine gültige E-Mail-Adresse für Benutzer zu verwenden. Bestätigungslinks werden immer in Protokollen gespeichert und in der Benutzeroberfläche angezeigt. Registrierungs-/Bestätigungs-E-Mails werden nicht versendet, wenn Sie nicht über eine öffentlich erreichbare URL auf Kavita zugreifen oder wenn die Funktion Hostname nicht konfiguriert ist.",
+        "reset": "{{common.reset}}",
+        "test": "Test",
+        "host-name-label": "Host Name",
+        "host-name-tooltip": "Domänenname (des Reverse Proxy). Wenn diese Option gesetzt ist, wird bei der E-Mail-Generierung immer dieser Name verwendet.",
+        "host-name-validation": "Der Hostname muss mit http(s) beginnen und darf nicht mit einem / enden",
+        "reset-to-default": "{{common.reset-to-default}}",
+        "save": "{{common.save}}"
+    },
+    "manage-library": {
+        "title": "Bibliotheken",
+        "add-library": "Bibliothek hinzufügen",
+        "no-data": "Es gibt keine Bibliotheken. Versuchen Sie, eine zu erstellen.",
+        "loading": "{{common.loading}}",
+        "edit-library-by-name": "{{Name}} löschen"
+    },
+    "manage-settings": {
+        "send-data": "Daten senden",
+        "reset-to-default": "{{common.reset-to-default}}",
+        "reset": "{{common.reset}}",
+        "save": "{{common.save}}",
+        "cache-size-validation": "Sie benötigen mindestens 50 MB.",
+        "field-required": "{{validation.field-required}}"
+    },
+    "manage-system": {
+        "version-title": "Version",
+        "home-page-title": "Startseite:",
+        "wiki-title": "Wiki:",
+        "discord-title": "Discord:",
+        "donations-title": "Spenden:",
+        "source-title": "Quelle:"
+    },
+    "manage-users": {
+        "title": "Aktive Benutzer",
+        "invite": "Einladen",
+        "you-alt": "(Du)",
+        "pending-title": "Ausstehend",
+        "delete-user-tooltip": "Benutzer löschen",
+        "delete-user-alt": "Benutzer {{user}} löschen",
+        "edit-user-tooltip": "bearbeiten",
+        "edit-user-alt": "Benutzer {{user}} bearbeiten",
+        "resend-invite-tooltip": "Einladung erneut senden",
+        "resend-invite-alt": "Einladung erneut senden an {{user}}",
+        "setup-user-tooltip": "Benutzer einrichten",
+        "setup-user-alt": "Benutzer {{user}} einrichten",
+        "change-password-tooltip": "Passwort ändern",
+        "change-password-alt": "Passwort ändern {{user}}",
+        "resend": "Erneut senden",
+        "setup": "Einrichten",
+        "last-active-title": "Zuletzt aktiv:",
+        "roles-title": "Funktionen:",
+        "none": "Keine",
+        "never": "Nie",
+        "online-now-tooltip": "Jetzt online",
+        "sharing-title": "Teilen:",
+        "no-data": "Es gibt keine anderen Benutzer.",
+        "loading": "{{common.loading}}"
+    },
+    "edit-collection-tags": {
+        "title": "Sammlung {{collectionName}} bearbeiten",
+        "required-field": "{{validation.required-field}}",
+        "save": "{{common.save}}",
+        "close": "{{common.close}}",
+        "cancel": "{{common.cancel}}",
+        "general-tab": "Allgemein",
+        "cover-image-tab": "Titelbild",
+        "series-tab": "Serien",
+        "name-label": "Name",
+        "name-validation": "Der Name muss einzigartig sein",
+        "summary-label": "Zusammenfassung",
+        "deselect-all": "{{common.deselect-all}}",
+        "select-all": "{{common.select-all}}"
+    },
+    "library-detail": {
+        "library-tab": "Bibliothek",
+        "recommended-tab": "Empfohlen"
+    },
+    "library-recommended": {
+        "no-data": "Hier gibt es nichts zu sehen. Fügen Sie Ihrer Bibliothek einige Metadaten hinzu, lesen oder bewerten Sie etwas. In dieser Bibliothek können auch die Empfehlungen ausgeschaltet sein.",
+        "on-deck": "{{dashboard.on-deck-title}}"
+    },
+    "nav-header": {
+        "search-series-alt": "Serie Suchen",
+        "search-alt": "Suchen…",
+        "no-data": "Keine Ergebnisse gefunden",
+        "server-settings": "Server Einstellungen",
+        "settings": "Einstellungen",
+        "help": "Hilfe",
+        "announcements": "Ankündigungen",
+        "logout": "Abmelden",
+        "all-filters": "Intelligente Filter",
+        "skip-alt": "Zum Hauptinhalt springen"
+    },
+    "common": {
+        "close": "Schließen",
+        "cancel": "Stornieren",
+        "create": "Erstellen",
+        "save": "Speichern",
+        "add": "Hinzufügen",
+        "delete": "Löschen",
+        "edit": "Bearbeiten",
+        "help": "Hilfe",
+        "submit": "Einreichen",
+        "email": "E-Mail",
+        "read": "Lesen",
+        "loading": "Wird geladen…",
+        "username": "Nutzername",
+        "password": "Passwort",
+        "select-all": "Wählen Sie Alle",
+        "deselect-all": "Alle abwählen",
+        "series-count": "{{num}}er-Serie",
+        "item-count": "{{num}} Artikel",
+        "book-num": "Buch",
+        "volume-num": "Band",
+        "chapter-num": "Kapitel"
+    },
+    "customize-dashboard-modal": {
+        "smart-filters": "Intelligente Filter",
+        "title-external-sources": "Externe Quellen",
+        "external-sources": "Externe Quellen",
+        "title-smart-filters": "Intelligente Filter"
+    },
+    "customize-sidenav-streams": {
+        "smart-filters-title": "Intelligente Filter"
+    },
+    "reading-lists": {
+        "title": "Leselisten"
+    },
+    "errors": {
+        "user-not-auth": "Benutzer ist nicht authentifiziert"
+    },
+    "add-to-list-modal": {
+        "filter-label": "{{common.filter}}",
+        "no-data": "Noch keine Listen erstellt"
+    },
+    "filter-field-pipe": {
+        "want-to-read": "Möchte ich lesen"
+    },
+    "grouped-typeahead": {
+        "reading-lists": "Leselisten",
+        "genres": "Genre"
+    },
+    "library-type-pipe": {
+        "manga": "Manga",
+        "comic": "Comic",
+        "book": "Buch"
+    },
+    "age-rating-pipe": {
+        "unknown": "Unbekannt",
+        "early-childhood": "Frühe Kindheit",
+        "everyone": "Jeder"
+    },
+    "manga-format-pipe": {
+        "unknown": "Unbekannt",
+        "archive": "Archiv",
+        "pdf": "PDF",
+        "image": "Bild",
+        "epub": "EPUB"
+    },
+    "announcements": {
+        "title": "Ankündigungen"
+    },
+    "out-of-date-modal": {
+        "description-1": "Bitte erwäge ein Upgrade, sodass du die neueste Version von Kavita verwendest.",
+        "description-2": "Wird einen Blick auf <a href='https://wiki.kavitareader.com/guides/updating/' target='_blank' rel='noreferrer noopener'>wiki</a> , um Anweisungen zu erhalten, wie du ein Update ausführen kannst.",
+        "description-3": "Gibt es einen spezifischen Grund, warum du noch kein Update ausgeführt hast? Wir würden uns freuen, herauszufinden, was dich dazu bringt, eine veraltete Version zu verwenden! Schau in unserem Discord vorbei und teile uns mit, was deinen Upgrade-Pfad blockiert.",
+        "close": "{{common.close}}",
+        "subtitle": "Es sieht so aus, als sei deine Installation mehr als {{count}} Versionen im Rückstand!"
+    },
+    "changelog": {
+        "installed": "Installiert",
+        "download": "Heruntergeladen",
+        "nightly": "Nightly: {{version}}",
+        "available": "Verfügbar",
+        "description-continued": "Tag, nutzt du einen Nighty-Release. Nur Major-Versionen werden als verfügbar angezeigt.",
+        "description": "Wenn du kein {{installed}} siehst"
+    },
+    "all-filters": {
+        "title": "Alle Smart-Filter",
+        "count": "{{count}} {{customize-dashboard-modal.title-smart-filters}}"
+    },
+    "publication-status-pipe": {
+        "cancelled": "Abgebrochen",
+        "ongoing": "Fortlaufend",
+        "completed": "Beendet"
+    },
+    "person-role-pipe": {
+        "artist": "Künstler",
+        "character": "Charakter",
+        "editor": "Bearbeiter",
+        "publisher": "Herausgeber"
+    }
+}

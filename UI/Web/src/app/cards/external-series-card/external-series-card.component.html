@@ -1,0 +1,36 @@
+<ng-container *transloco="let t; read: 'external-series-card'">
+  <ng-container *ngIf="data !== undefined">
+    <div class="card-item-container card clickable">
+      <div class="overlay" (click)="handleClick()">
+        <ng-container>
+          <app-image borderRadius=".25rem .25rem 0 0" height="230px" width="158px" [imageUrl]="data.coverUrl"></app-image>
+        </ng-container>
+
+
+        <ng-container>
+          <div class="badge-container">
+            <div class="not-read-badge" ></div>
+          </div>
+        </ng-container>
+
+        <div class="card-overlay"></div>
+
+      </div>
+
+      @if (data.name.length > 0) {
+        <div class="card-body">
+          <div>
+            <span class="card-title" placement="top" id="{{data.name}}" [ngbTooltip]="data.name" (click)="handleClick()" tabindex="0">
+              <img class="me-1" [ngSrc]="data.provider | providerImage" width="20" height="20" alt="">
+              {{data.name}}
+            </span>
+          </div>
+          <a #link class="card-title library" [href]="data.url" target="_blank" rel="noreferrer nofollow">{{t('open-external')}}</a>
+        </div>
+      }
+
+    </div>
+
+  </ng-container>
+
+</ng-container>
