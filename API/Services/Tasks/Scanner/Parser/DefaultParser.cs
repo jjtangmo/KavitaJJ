@@ -101,6 +101,61 @@ public abstract class DefaultParser(IDirectoryService directoryService) : IDefau
         }
     }
 
+    public void ParseFromFallbackFolders_jjmod(string filePath, string rootPath, string libraryRoot, LibraryType type, ref ParserInfo ret)
+    {
+        var fallbackFolders = directoryService.GetFoldersTillRoot(libraryRoot, filePath)
+            .Where(f => !Parser.IsSpecial(f, type))
+            .ToList();
+
+        if(fallbackFolders.Count == 0) {
+            var rootFolderName = directoryService.FileSystem.DirectoryInfo.New(rootPath).Name;
+            var series = Parser.ParseSeries(rootFolderName, type);
+
+            if(string.IsNullOrEmpty(series)) {
+                ret.Series = rootFolderName;
+                return;
+            }
+
+            if(!string.IsNullOrEmpty(series) && (string.IsNullOrEmpty(ret.Series) || !rootFolderName.Contains(ret.Series))) {
+                ret.Series = series;
+                return;
+            }
+        }
+
+        for(var i = 0; i < fallbackFolders.Count; i++) {
+            var folder = fallbackFolders[i];
+
+            var parsedVolume = Parser.ParseVolume(folder, type);
+            var parsedChapter = Parser.ParseChapter(folder, type);
+
+            if(!parsedVolume.Equals(Parser.LooseLeafVolume) || !parsedChapter.Equals(Parser.DefaultChapter)) {
+                if((string.IsNullOrEmpty(ret.Volumes) || ret.Volumes.Equals(Parser.LooseLeafVolume))
+                    && !string.IsNullOrEmpty(parsedVolume) && !parsedVolume.Equals(Parser.LooseLeafVolume)) {
+                    ret.Volumes = parsedVolume;
+                }
+                if((string.IsNullOrEmpty(ret.Chapters) || ret.Chapters.Equals(Parser.DefaultChapter))
+                    && !string.IsNullOrEmpty(parsedChapter) && !parsedChapter.Equals(Parser.DefaultChapter)) {
+                    ret.Chapters = parsedChapter;
+                }
+            }
+
+            // Generally users group in series folders. Let's try to parse series from the top folder
+            if(!folder.Equals(ret.Series) && i == fallbackFolders.Count - 1) {
+                var series = Parser.ParseSeries(folder, type);
+
+                if(string.IsNullOrEmpty(series)) {
+                    ret.Series = Parser.CleanTitle(folder, type is LibraryType.Comic);
+                    break;
+                }
+
+                if(!string.IsNullOrEmpty(series) && (string.IsNullOrEmpty(ret.Series) && !folder.Contains(ret.Series))) {
+                    ret.Series = series;
+                    break;
+                }
+            }
+        }
+    }
+
     protected void UpdateFromComicInfo(ParserInfo info)
     {
         if (info.ComicInfo == null) return;

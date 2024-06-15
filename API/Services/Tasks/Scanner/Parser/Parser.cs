@@ -103,8 +103,11 @@ public static class Parser
     private static readonly Regex CoverImageRegex = new Regex(@"(?<![[a-z]\d])(?:!?)(?<!back)(?<!back_)(?<!back-)(cover|folder)(?![\w\d])",
         MatchOptions, RegexTimeout);
 
-    private static readonly Regex NormalizeRegex = new Regex(@"[^\p{L}0-9\+!]",
-        MatchOptions, RegexTimeout);
+    
+    //jjmod
+    private static readonly Regex NormalizeRegex = new Regex(@"\s+", MatchOptions, RegexTimeout);
+    //original
+    //private static readonly Regex NormalizeRegex = new Regex(@"[^\p{L}0-9\+!]", MatchOptions, RegexTimeout);
 
     /// <summary>
     /// Supports Batman (2020) or Batman (2)
@@ -843,7 +846,8 @@ public static class Parser
     {
         return type switch
         {
-            LibraryType.Manga => ParseMangaSeries(filename),
+            //LibraryType.Manga => ParseMangaSeries(filename),
+            LibraryType.Manga => "", //jjmod
             LibraryType.Comic => ParseComicSeries(filename),
             LibraryType.Book => ParseMangaSeries(filename),
             LibraryType.Image => ParseMangaSeries(filename),
@@ -1104,6 +1108,7 @@ public static class Parser
     public static string Normalize(string name)
     {
         return NormalizeRegex.Replace(name, string.Empty).Trim().ToLower();
+        //return NormalizeRegex.Replace(name, string.Empty).Trim().ToLower();
     }
 
     /// <summary>

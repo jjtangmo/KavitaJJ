@@ -9,6 +9,7 @@ using API.Services.Tasks.Scanner;
 using API.Services.Tasks.Scanner.Parser;
 
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -41,18 +42,28 @@ public static class MeModFunction {
         return parserInfo;
     }
 
+  
 
-
-    public static async Task MangaSeriesGetMetaDataFromComicInfoXML_Pdf(Series series, ITagManagerService _tagManagerService)
+    public static async Task MangaSeriesGetMetaDataFromComicInfoXML_Pdf(Series series, Library library, ITagManagerService _tagManagerService)
     {
-        string comicInofPath = $"{series.FolderPath}\\ComicInfo.xml";
-        if(!File.Exists(comicInofPath))
+        string[] libPaths = library.Folders.Select(p => p.Path).ToArray();
+        //string folderPath = series.FolderPath!;
+        //foreach(var libPath in libPaths) {
+        //    folderPath = folderPath.Replace(libPath, "");
+        //    folderPath = folderPath.Replace($"{libPath}/".Replace("/","\\"), "");
+        //    folderPath = folderPath.Replace($"{libPath}\\".Replace("\\", "/"), "");
+        //}
+        string comicInfoPath = $"{series.FolderPath}/ComicInfo.xml";
+        //series.Name = folderPath;
+        //series.OriginalName = folderPath;
+        //series.SortName = folderPath;
+        //series.LocalizedName = folderPath;
+        //series.NormalizedName = folderPath.ToNormalized();
+        if(!File.Exists(comicInfoPath))
             return;
-
-        var comicInfo = GetComicInfoFromFile($"{series.FolderPath}\\ComicInfo.xml");
+        ComicInfo? comicInfo = GetComicInfoFromFile(comicInfoPath);
         if(comicInfo == null)
-            return;
-        series.Metadata.Summary = comicInfo.Summary;
+            return;        
         var tags = TagHelper.GetTagValues(comicInfo.Tags);
         TagHelper.KeepOnlySameTagBetweenLists(series.Metadata.Tags, tags.Select(t => new TagBuilder(t).Build()).ToList());
         foreach(var tag in tags) {
@@ -194,4 +205,19 @@ public static class MeModFunction {
     //text for search
     //MeModFunction.Preserve Original
     //search above word for view original code
+}
+
+
+file static class ArrayExtensions {
+    public static void ReplaceAll<T>(this T[] items, T oldValue, T newValue)
+    {
+        items.ReplaceAll(oldValue, newValue, EqualityComparer<T>.Default);
+    }
+
+    public static void ReplaceAll<T>(this T[] items, T oldValue, T newValue, IEqualityComparer<T> comparer)
+    {
+        for(int index = 0; index < items.Length; index++)
+            if(comparer.Equals(items[index], oldValue))
+                items[index] = newValue;
+    }
 }
