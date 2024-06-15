@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kavata", "API\Kavata.csproj", "{1BC0273F-FEBE-4DA1-BC04-3A3167E4C86C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jubvata", "API\Jubvata.csproj", "{1BC0273F-FEBE-4DA1-BC04-3A3167E4C86C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kavita.Common", "Kavita.Common\Kavita.Common.csproj", "{165A86F5-9E74-4C05-9305-A6F0BA32C9EE}"
 EndProject
@@ -48,7 +48,7 @@ Global
 		{165A86F5-9E74-4C05-9305-A6F0BA32C9EE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
-e|Any CPU
+Any CPU
 		{6F7910F2-1B95-4570-A490-519C8935B9D1}.Release|x86.Build.0 = Release|Any CPU
 		{165A86F5-9E74-4C05-9305-A6F0BA32C9EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{165A86F5-9E74-4C05-9305-A6F0BA32C9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU

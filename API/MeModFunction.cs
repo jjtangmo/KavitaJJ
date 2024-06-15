@@ -140,7 +140,7 @@ public static class MeModFunction {
             return;
         var comicInfo = GetComicInfoFromFile(comicInofPath);
         if(comicInfo is null)
-            return;
+            comicInfo = new ComicInfo();
         if(parserInfo.ComicInfo is null)
             return;
         if(comicInfo.Series is not null && comicInfo.Series.Length > 0) {
@@ -152,16 +152,17 @@ public static class MeModFunction {
             parserInfo.Series = MeModFunction.UseSeriesByFolder(parserInfo, rootPath, libraryRoot);
             parserInfo.ComicInfo.Series = parserInfo.Series;
         }
+        string volume_fromfilename = GetVolumeByFileName(filePath, type);
         if(comicInfo.Title is not null && comicInfo.Title.Length > 0) {
             parserInfo.Title = $"{comicInfo.Title}";
             parserInfo.ComicInfo.Title = $"{comicInfo.Title}";
-            string volume_fromfilename = GetVolumeByFileName(filePath, type);
             if(volume_fromfilename.Length > 0 && volume_fromfilename != "-100000") {
                 parserInfo.Title = $"{parserInfo.Title} เล่ม {volume_fromfilename}";
                 parserInfo.ComicInfo.Title = $"{parserInfo.Title}";
                 parserInfo.ComicInfo.Volume = volume_fromfilename;
                 parserInfo.Volumes = volume_fromfilename;
-            } else {
+            }
+            else {
                 parserInfo.Title = MeModFunction.UseTitleByFileName(filePath);
                 parserInfo.ComicInfo.Title = parserInfo.Title;
             }
@@ -170,6 +171,10 @@ public static class MeModFunction {
             //when not found <Title>
             parserInfo.Title = MeModFunction.UseTitleByFileName(filePath);
             parserInfo.ComicInfo.Title = parserInfo.Title;
+            if(volume_fromfilename.Length > 0 && volume_fromfilename != "-100000") {
+                parserInfo.ComicInfo.Volume = volume_fromfilename;
+                parserInfo.Volumes = volume_fromfilename;
+            }
         }
         if(comicInfo.Summary is not null && comicInfo.Summary.Length > 0) {
             parserInfo.ComicInfo.Summary = comicInfo.Summary;
@@ -177,9 +182,13 @@ public static class MeModFunction {
         if(comicInfo.Status is not null && comicInfo.Status.Length > 0) {
             parserInfo.ComicInfo.Status = comicInfo.Status;
         }
-
+        if(comicInfo.Tags is not null && comicInfo.Tags.Length > 0) {
+            parserInfo.ComicInfo.Tags = comicInfo.Tags;
+        }
+        if(comicInfo.Genre is not null && comicInfo.Genre.Length > 0) {
+            parserInfo.ComicInfo.Genre = comicInfo.Genre;
+        }
     }
-
     internal static bool NoUpdateCheck => true;
 
     //text for search

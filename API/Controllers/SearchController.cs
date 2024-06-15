@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Threading.Tasks;
 using API.Data;
 using API.Data.Repositories;
@@ -62,8 +62,7 @@ public class SearchController : BaseApiController
 
         var isAdmin = await _unitOfWork.UserRepository.IsUserAdminAsync(user);
 
-        var series = await _unitOfWork.SeriesRepository.SearchSeries(user.Id, isAdmin,
-            libraries, queryString);
+        var series = await _unitOfWork.SeriesRepository.SearchSeries(user.Id, isAdmin, libraries, queryString);
 
         return Ok(series);
     }

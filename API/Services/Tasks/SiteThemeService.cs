@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using API.Data;
@@ -59,7 +59,6 @@ public class ThemeService : IThemeService
             .GetFilesWithExtension(Scanner.Parser.Parser.NormalizePath(_directoryService.SiteThemeDirectory), @"\.css")
             .Where(name => !reservedNames.Contains(name.ToNormalized()) && !name.Contains(" "))
             .ToList();
-
         var allThemes = (await _unitOfWork.SiteThemeRepository.GetThemes()).ToList();
 
         // First remove any files from allThemes that are User Defined and not on disk
