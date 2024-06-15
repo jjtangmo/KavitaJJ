@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/reading-list/_components/reading-list-item/reading-list-item.component.scss"],
+  "sourcesContent": ["$image-height: 125px;\n\n.reading-list-item {\n  max-height: 140px;\n  height: 140px;\n}\n\n.progress-banner {\n    height: 5px;\n\n    .progress {\n        color: var(--card-progress-bar-color);\n        background-color: transparent;\n    }\n}\n\n.badge-container {\n    border-radius: 4px;\n    display: block;\n    height: $image-height;\n    overflow: hidden;\n    pointer-events: none;\n    position: absolute;\n    width: 106px;\n}\n\n.not-read-badge {\n    position: relative;\n    top: -125px;\n    left: 78px;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 0 var(--card-progress-triangle-size) var(--card-progress-triangle-size) 0;\n    border-color: transparent var(--primary-color) transparent transparent;\n}\n"],
+  "mappings": "AAEA,CAAA,kBACE,WAAA,MACA,OAAA,MAGF,CAAA,gBACI,OAAA,IAEA,CAHJ,gBAGI,CAAA,SACI,MAAA,IAAA,2BACA,iBAAA,YAIR,CAAA,gBAdA,cAeI,IACA,QAAA,MACA,OAnBW,MAoBX,SAAA,OACA,eAAA,KACA,SAAA,SACA,MAAA,MAGJ,CAAA,eACI,SAAA,SACA,IAAA,OACA,KAAA,KACA,MAAA,EACA,OAAA,EACA,aAAA,MACA,aAAA,EAAA,IAAA,+BAAA,IAAA,+BAAA,EACA,aAAA,YAAA,IAAA,iBAAA,YAAA",
+  "names": []
+}

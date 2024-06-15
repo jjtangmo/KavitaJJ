@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/statistics/_components/reading-activity/reading-activity.component.scss"],
+  "sourcesContent": ["::ng-deep .dark .ngx-charts text {\n    fill: #a0aabe;\n}\n\n.stat-container {\n    height: auto;\n    box-sizing:border-box;\n}\n\n.stat-chart {\n    width: 100%;\n    margin: 0 auto;\n    max-width: 700px;\n}\n"],
+  "mappings": "AAAA,UAAA,CAAA,KAAA,CAAA,WAAA,KACI,KAAA,QAGJ,CAAA,eACI,OAAA,KACA,WAAA,WAGJ,CAAA,WACI,MAAA,KAVJ,OAWI,EAAA,KACA,UAAA",
+  "names": []
+}

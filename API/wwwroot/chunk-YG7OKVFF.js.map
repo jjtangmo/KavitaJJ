@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/manga-reader/_models/reader-enums.ts"],
+  "sourcesContent": ["export enum FITTING_OPTION {\n    HEIGHT = 'full-height',\n    WIDTH = 'full-width',\n    ORIGINAL = 'original'\n}\n\n/**\n * How to split a page into virutal pages. Only works with LayoutMode.Single\n */\nexport enum SPLIT_PAGE_PART {\n    NO_SPLIT = 'none',\n    LEFT_PART = 'left',\n    RIGHT_PART = 'right'\n}\n  \nexport enum PAGING_DIRECTION {\n    FORWARD = 1,\n    BACKWARDS = -1,\n}\n  \n"],
+  "mappings": "AAAA,IAAYA,EAAZ,SAAYA,EAAc,CACtBA,OAAAA,EAAA,OAAA,cACAA,EAAA,MAAA,aACAA,EAAA,SAAA,WAHQA,CAIZ,EAJYA,GAAc,CAAA,CAAA,EASdC,EAAZ,SAAYA,EAAe,CACvBA,OAAAA,EAAA,SAAA,OACAA,EAAA,UAAA,OACAA,EAAA,WAAA,QAHQA,CAIZ,EAJYA,GAAe,CAAA,CAAA,EAMfC,EAAZ,SAAYA,EAAgB,CACxBA,OAAAA,EAAAA,EAAA,QAAA,CAAA,EAAA,UACAA,EAAAA,EAAA,UAAA,EAAA,EAAA,YAFQA,CAGZ,EAHYA,GAAgB,CAAA,CAAA",
+  "names": ["FITTING_OPTION", "SPLIT_PAGE_PART", "PAGING_DIRECTION"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/read-more/read-more.component.scss"],
+  "sourcesContent": [".blur-text {\n  color: transparent;\n  text-shadow: 0 0 5px var(--body-text-color);\n}"],
+  "mappings": "AAAA,CAAA,UACE,MAAA,YACA,YAAA,EAAA,EAAA,IAAA,IAAA",
+  "names": []
+}

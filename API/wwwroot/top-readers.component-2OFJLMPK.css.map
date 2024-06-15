@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/statistics/_components/top-readers/top-readers.component.scss"],
+  "sourcesContent": [".grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fill, 280px);\n    grid-gap: 0.5rem;\n    justify-content: space-evenly;\n    width: 100%;\n    overflow-y: auto;\n    overflow-x: hidden;\n    align-items: start;\n}\n\n.card {\n    border: var(--bs-card-border-width) solid var(--bs-card-border-color);\n}\n"],
+  "mappings": "AAAA,CAAA,KACI,QAAA,KACA,sBAAA,OAAA,SAAA,CAAA,OACA,SAAA,MACA,gBAAA,aACA,MAAA,KACA,WAAA,KACA,WAAA,OACA,YAAA,MAGJ,CAAA,KACI,OAAA,IAAA,wBAAA,MAAA,IAAA",
+  "names": []
+}

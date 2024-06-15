@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/_pipes/provider-name.pipe.ts"],
+  "sourcesContent": ["import { Pipe, PipeTransform } from '@angular/core';\nimport {ScrobbleProvider} from \"../_services/scrobbling.service\";\n\n@Pipe({\n  name: 'providerName',\n  standalone: true\n})\nexport class ProviderNamePipe implements PipeTransform {\n\n  transform(value: ScrobbleProvider): string {\n    switch (value) {\n      case ScrobbleProvider.AniList:\n        return 'AniList';\n      case ScrobbleProvider.Mal:\n        return 'MAL';\n      case ScrobbleProvider.Kavita:\n        return 'Kavita';\n      case ScrobbleProvider.GoogleBooks:\n        return 'Google Books';\n    }\n  }\n\n}\n"],
+  "mappings": "iFAOA,IAAaA,GAAgB,IAAA,CAAvB,IAAOA,EAAP,MAAOA,CAAgB,CAE3BC,UAAUC,EAAuB,CAC/B,OAAQA,EAAK,CACX,KAAKC,EAAiBC,QACpB,MAAO,UACT,KAAKD,EAAiBE,IACpB,MAAO,MACT,KAAKF,EAAiBG,OACpB,MAAO,SACT,KAAKH,EAAiBI,YACpB,MAAO,eAEb,yCAbWP,EAAgB,2CAAhBA,EAAgBQ,KAAA,GAAAC,WAAA,EAAA,CAAA,EAAvB,IAAOT,EAAPU,SAAOV,CAAgB,GAAA",
+  "names": ["ProviderNamePipe", "transform", "value", "ScrobbleProvider", "AniList", "Mal", "Kavita", "GoogleBooks", "pure", "standalone", "_ProviderNamePipe"]
+}

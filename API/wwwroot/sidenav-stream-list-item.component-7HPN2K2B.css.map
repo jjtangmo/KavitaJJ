@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/sidenav/_components/sidenav-stream-list-item/sidenav-stream-list-item.component.scss"],
+  "sourcesContent": [".list-item {\n  height: 60px;\n  max-height: 60px;\n}\n\n.meta {\n  display: flex;\n}\n"],
+  "mappings": "AAAA,CAAA,UACE,OAAA,KACA,WAAA,KAGF,CAAA,KACE,QAAA",
+  "names": []
+}

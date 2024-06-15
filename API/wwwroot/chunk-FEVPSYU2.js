@@ -1,0 +1,2 @@
+import{a as r}from"./chunk-RLL2TM5C.js";import{ya as o}from"./chunk-2LHIXASS.js";var c=(()=>{let t=class t{transform(i){switch(i){case r.AniList:return"AniList";case r.Mal:return"MAL";case r.Kavita:return"Kavita";case r.GoogleBooks:return"Google Books"}}};t.\u0275fac=function(a){return new(a||t)},t.\u0275pipe=o({name:"providerName",type:t,pure:!0,standalone:!0});let e=t;return e})();export{c as a};
+//# sourceMappingURL=chunk-FEVPSYU2.js.map

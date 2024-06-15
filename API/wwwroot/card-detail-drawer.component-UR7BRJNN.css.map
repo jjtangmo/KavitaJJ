@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/cards/card-detail-drawer/card-detail-drawer.component.scss"],
+  "sourcesContent": [".hide-if-empty:empty {\n  display: none !important;\n}\n\n.offcanvas-body {\n    overflow: auto;\n}\n\n.offcanvas-header {\n  padding: 1rem 1rem 0;\n}\n\n.tab-content {\n  overflow: auto;\n  height: calc(40vh - (46px + 1rem)); // drawer height - offcanvas heading height\n}\n\n.h6 {\n  font-weight: 600;\n}"],
+  "mappings": "AAAA,CAAA,aAAA,OACE,QAAA,eAGF,CAAA,eACI,SAAA,KAGJ,CAAA,iBARA,QASE,KAAA,KAAA,EAGF,CAAA,YACE,SAAA,KACA,OAAA,KAAA,KAAA,EAAA,MAAA,EAAA,OAGF,CAAA,GACE,YAAA",
+  "names": []
+}

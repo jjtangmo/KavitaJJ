@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/user-settings/user-preferences/user-preferences.component.scss"],
+  "sourcesContent": [".invalid-feedback {\n    display: inline-block !important;\n}\n\n.container {\n    padding-top: 10px;\n}\n\n.form-range {\n    width: 90%;\n}\n.range-label {\n    width: 100%;\n}\n.range-text {\n    vertical-align: top;\n    margin-left: 5px;\n}"],
+  "mappings": "AAAA,CAAA,iBACI,QAAA,uBAGJ,CAAA,UACI,YAAA,KAGJ,CAAA,WACI,MAAA,IAEJ,CAAA,YACI,MAAA,KAEJ,CAAA,WACI,eAAA,IACA,YAAA",
+  "names": []
+}

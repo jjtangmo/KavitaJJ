@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/cards/_modals/bulk-add-to-collection/bulk-add-to-collection.component.scss"],
+  "sourcesContent": [".clickable:hover, .clickable:focus {\n    background-color: lightgreen;\n}\n\n.collection {\n    overflow: auto;\n    .modal-body {\n    max-height: calc(100vh - 235px);\n    min-height: 150px;\n        .list-group {\n            overflow: auto;\n            max-height: calc(100vh - 355px);\n            min-height: 32px;\n        }\n    }\n}\n"],
+  "mappings": "AAAA,CAAA,SAAA,OAAA,CAAA,SAAA,OACI,iBAAA,QAGJ,CAAA,WACI,SAAA,KACA,CAFJ,WAEI,CAAA,WACA,WAAA,KAAA,MAAA,EAAA,OACA,WAAA,MACI,CALR,WAKQ,CAHJ,WAGI,CAAA,WACI,SAAA,KACA,WAAA,KAAA,MAAA,EAAA,OACA,WAAA",
+  "names": []
+}

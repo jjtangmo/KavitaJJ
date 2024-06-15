@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/collections/_components/collection-detail/collection-detail.component.scss"],
+  "sourcesContent": [".poster {\n  width: 100%;\n  max-width: 300px;\n}\n\n@media(max-width: var(--grid-breakpoints-sm)) {\n  .poster {\n    display: none;\n  }\n}\n\n@media(max-width: var(--grid-breakpoints-sm)) {\n  .read-btn--text {\n    display: none;\n  }\n}\n\n.card-container {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, 158px);\n  grid-gap: 0.5rem;\n  justify-content: space-around;\n}\n\n\n.virtual-scroller, virtual-scroller {\n  width: 100%;\n  height: calc(100vh - 85px);\n  max-height: calc(var(--vh)*100 - 170px);\n}\n\n// This is responsible for ensuring we scroll down and only tabs and companion bar is visible\n.main-container {\n  // Height set dynamically by  get ScrollingBlockHeight()\n  overflow-y: auto;\n  position: relative;\n  overscroll-behavior-y: none;\n}\n\nh2 {\n  margin-bottom: 0;\n  word-break: break-all;\n}\n"],
+  "mappings": "AAAA,CAAA,OACE,MAAA,KACA,UAAA,MAGF,OAAA,CAAA,SAAA,EAAA,IAAA,wBACE,CANF,OAOI,QAAA,MAIJ,OAAA,CAAA,SAAA,EAAA,IAAA,wBACE,CAAA,eACE,QAAA,MAIJ,CAAA,eACE,QAAA,KACA,sBAAA,OAAA,SAAA,CAAA,OACA,SAAA,MACA,gBAAA,aAIF,CAAA,iBAAA,iBACE,MAAA,KACA,OAAA,KAAA,MAAA,EAAA,MACA,WAAA,KAAA,IAAA,MAAA,EAAA,IAAA,EAAA,OAIF,CAAA,eAEE,WAAA,KACA,SAAA,SACA,sBAAA,KAGF,GACE,cAAA,EACA,WAAA",
+  "names": []
+}

@@ -1,0 +1,2 @@
+var i=function(n){return n[n.Dark=0]="Dark",n[n.Light=1]="Light",n}(i||{});var t=function(n){return n[n.Vertical=0]="Vertical",n[n.Horizontal=1]="Horizontal",n[n.Wrapped=2]="Wrapped",n[n.Page=3]="Page",n}(t||{});var r=function(n){return n[n.Multiple=0]="Multiple",n[n.Single=1]="Single",n[n.Book=2]="Book",n[n.InfiniteScroll=3]="InfiniteScroll",n}(r||{});var g=function(n){return n[n.None=0]="None",n[n.Odd=1]="Odd",n[n.Even=2]="Even",n}(g||{});export{i as a,t as b,r as c,g as d};
+//# sourceMappingURL=chunk-AZ5T37FH.js.map

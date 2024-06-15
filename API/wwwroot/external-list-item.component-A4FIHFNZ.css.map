@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/cards/external-list-item/external-list-item.component.scss"],
+  "sourcesContent": [".list-item-container {\n  background: var(--card-list-item-bg-color);\n  border-radius: 5px;\n  position: relative;\n}\n\n"],
+  "mappings": "AAAA,CAAA,oBACE,WAAA,IAAA,2BADF,cAEE,IACA,SAAA",
+  "names": []
+}

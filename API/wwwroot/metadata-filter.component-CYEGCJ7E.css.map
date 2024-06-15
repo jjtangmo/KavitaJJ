@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/metadata-filter/metadata-filter.component.scss"],
+  "sourcesContent": ["/* Works for Chrome, Safari, Edge, Opera */\ninput::-webkit-outer-spin-button,\ninput::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n/* Works for Firefox */\ninput[type=\"number\"] {\n  -moz-appearance: textfield;\n}\n\n"],
+  "mappings": "AACA,KAAA,4BAAA,KAAA,4BAEE,mBAAA,KAHF,OAIE,EAIF,KAAA,CAAA,aACE,gBAAA",
+  "names": []
+}

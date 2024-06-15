@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/series-detail/_components/external-rating/external-rating.component.scss"],
+  "sourcesContent": [".custom-col {\n    padding-left: 0px;\n    padding-right: 0px;\n}\n\n.badge {\n  color: var(--badge-text-color);\n}\n\n.sm-popover {\n  width: 150px;\n\n  > .popover-body {\n    padding-top: 10px;\n  }\n}\n\n.md-popover {\n  width: 214px;\n\n  > .popover-body {\n    padding-top: 10px;\n  }\n}\n\n.lg-popover {\n  width: 320px;\n\n  > .popover-body {\n    padding-top: 10px;\n  }\n}\n\n.rating-star {\n  i {\n    position: relative;\n    display: inline-block;\n    padding-right: 0.1rem;\n    color: #d3d3d3;\n  }\n\n  .filled {\n    color: var(--primary-color);\n\n  }\n}\n::ng-deep .star {\n  background-color: var(--primary-color);\n}\n"],
+  "mappings": "AAAA,CAAA,WACI,aAAA,EACA,cAAA,EAGJ,CAAA,MACE,MAAA,IAAA,oBAGF,CAAA,WACE,MAAA,MAEA,CAHF,UAGE,CAAA,CAAA,aACE,YAAA,KAIJ,CAAA,WACE,MAAA,MAEA,CAHF,UAGE,CAAA,CARA,aASE,YAAA,KAIJ,CAAA,WACE,MAAA,MAEA,CAHF,UAGE,CAAA,CAhBA,aAiBE,YAAA,KAKF,CAAA,YAAA,EACE,SAAA,SACA,QAAA,aACA,cAAA,MACA,MAAA,QAGF,CAPA,YAOA,CAAA,OACE,MAAA,IAAA,iBAIJ,UAAA,CAAA,KACE,iBAAA,IAAA",
+  "names": []
+}

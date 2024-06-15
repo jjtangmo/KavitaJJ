@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/_single-module/review-card/review-card.component.scss"],
+  "sourcesContent": [".profile-image {\n    font-size: 2rem;\n    padding: 20px;\n}\n\n.my-review {\n    position: absolute;\n    z-index: 20;\n    top: 38px;\n    left: 38px;\n}\n\n.fa-star {\n  color: var(--review-card-star-color);\n}\n\n.card-text {\n    font-size: 14px;\n}\n\n.card-title {\n    overflow: hidden;\n    width: 235px;\n    word-break: break-all;\n    height: 20px;\n}\n\n.card-text.no-images {\n    min-height: 63px;\n    max-height: 63px;\n    text-overflow: ellipsis;\n    overflow: hidden;\n}\n\n.no-images img {\n    display: none;\n}\n\n.card-footer {\n    font-size: 13px;\n    display: flex;\n    max-width: 319px;\n    justify-content: space-between;\n    margin: 0 auto;\n}\n"],
+  "mappings": "AAAA,CAAA,cACI,UAAA,KADJ,QAEI,KAGJ,CAAA,UACI,SAAA,SACA,QAAA,GACA,IAAA,KACA,KAAA,KAGJ,CAAA,QACE,MAAA,IAAA,0BAGF,CAAA,UACI,UAAA,KAGJ,CAAA,WACI,SAAA,OACA,MAAA,MACA,WAAA,UACA,OAAA,KAGJ,CAXA,SAWA,CAAA,UACI,WAAA,KACA,WAAA,KACA,cAAA,SACA,SAAA,OAGJ,CAPA,UAOA,IACI,QAAA,KAGJ,CAAA,YACI,UAAA,KACA,QAAA,KACA,UAAA,MACA,gBAAA,cA1CJ,OA2CI,EAAA",
+  "names": []
+}

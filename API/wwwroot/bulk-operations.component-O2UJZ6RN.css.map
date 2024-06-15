@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/cards/bulk-operations/bulk-operations.component.scss"],
+  "sourcesContent": [".bulk-select {\n    background-color: var(--navbar-bg-color);\n    border-bottom: 2px solid var(--primary-color);\n    color: var(--bulk-selection-text-color) !important;\n\n    .btn-icon {\n        color: var(--bulk-selection-text-color);\n    }\n}\n\n.highlight {\n    color: var(--bulk-selection-highlight-text-color) !important;\n}"],
+  "mappings": "AAAA,CAAA,YACI,iBAAA,IAAA,mBACA,cAAA,IAAA,MAAA,IAAA,iBACA,MAAA,IAAA,uCAEA,CALJ,YAKI,CAAA,SACI,MAAA,IAAA,6BAIR,CAAA,UACI,MAAA,IAAA",
+  "names": []
+}

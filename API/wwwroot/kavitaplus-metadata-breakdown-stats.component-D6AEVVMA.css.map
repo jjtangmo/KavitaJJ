@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/statistics/_components/kavitaplus-metadata-breakdown-stats/kavitaplus-metadata-breakdown-stats.component.scss"],
+  "sourcesContent": [".dashboard-card-content {\n  max-width: 400px;\n  height: auto;\n  box-sizing:border-box;\n}\n\n.day-breakdown-chart {\n  width: 100%;\n  margin: 0 auto;\n  max-width: 400px;\n}\n\n.error {\n  color: red;\n}\n.completed {\n  color: var(--color-5);\n}\n"],
+  "mappings": "AAAA,CAAA,uBACE,UAAA,MACA,OAAA,KACA,WAAA,WAGF,CAAA,oBACE,MAAA,KAPF,OAQE,EAAA,KACA,UAAA,MAGF,CAAA,MACE,MAAA,IAEF,CAAA,UACE,MAAA,IAAA",
+  "names": []
+}

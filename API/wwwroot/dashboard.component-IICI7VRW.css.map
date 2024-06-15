@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/admin/dashboard/dashboard.component.scss"],
+  "sourcesContent": [".container {\n    padding-top: 10px;\n}\n\n.tab:last-child > a {\n    &.active, &::before {\n        background-color: #FFBA15;\n    }\n}\n\n"],
+  "mappings": "AAAA,CAAA,UACI,YAAA,KAIA,CAAA,GAAA,WAAA,CAAA,CAAA,CAAA,OAAA,CAAA,GAAA,WAAA,CAAA,CAAA,QACI,iBAAA",
+  "names": []
+}

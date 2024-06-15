@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/icon-and-title/icon-and-title.component.scss"],
+  "sourcesContent": [".icon-and-title {\n    flex-direction: column;\n    min-width: 60px;\n}\n\n.icon {\n    width: 20px;\n    height: 20px;\n    text-align: center;\n}\n\n.text {\n    padding-top: 5px;\n    text-align: center;\n}\n\n.label {\n    padding-bottom: 5px;\n    text-align: center;\n    font-weight: bold;\n}"],
+  "mappings": "AAAA,CAAA,eACI,eAAA,OACA,UAAA,KAGJ,CAAA,KACI,MAAA,KACA,OAAA,KACA,WAAA,OAGJ,CAAA,KACI,YAAA,IACA,WAAA,OAGJ,CAAA,MACI,eAAA,IACA,WAAA,OACA,YAAA",
+  "names": []
+}

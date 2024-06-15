@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/admin/license/license.component.scss"],
+  "sourcesContent": [".error {\n  color: var(--error-color);\n}\n\n.successful-validation {\n    color: var(--primary-color);\n}\n"],
+  "mappings": "AAAA,CAAA,MACE,MAAA,IAAA,eAGF,CAAA,sBACI,MAAA,IAAA",
+  "names": []
+}

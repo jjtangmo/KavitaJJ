@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/circular-loader/circular-loader.component.scss"],
+  "sourcesContent": [".number {\n  position: absolute;\n  top: 50%; \n  left: 46%;\n  font-size: 18px;\n}\n\n.indicator {\n  font-weight: 500;\n  margin-left: 2px;\n  z-index: 10;\n  color: var(--primary-color);\n  animation: MoveUpDown 1s linear infinite;\n}"],
+  "mappings": "AAAA,CAAA,OACE,SAAA,SACA,IAAA,IACA,KAAA,IACA,UAAA,KAGF,CAAA,UACE,YAAA,IACA,YAAA,IACA,QAAA,GACA,MAAA,IAAA,iBACA,UAAA,WAAA,GAAA,OAAA",
+  "names": []
+}

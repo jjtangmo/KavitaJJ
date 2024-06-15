@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/cards/list-item/list-item.component.scss"],
+  "sourcesContent": ["// with summary and cards, we have a height of 220px, we might want to default to 220px and let it grow from there to help with virtualization\n\n.download {\n    width: 80px;\n    height: 80px;\n    position: absolute;\n    top: 55px;\n    left: 20px;\n}\n\n.progress-banner {\n    height: 5px;\n\n    .progress {\n        color: var(--card-progress-bar-color);\n        background-color: transparent;\n    }\n}\n\n.list-item-container {\n    background: var(--card-list-item-bg-color);\n    border-radius: 5px;\n    position: relative;\n}\n\n.not-read-badge {\n    position: absolute;\n    top: 8px;\n    left: 110px;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 0 var(--card-progress-triangle-size) var(--card-progress-triangle-size) 0;\n    border-color: transparent var(--primary-color) transparent transparent;\n}\n\n.subtitle-with-actionables {\n    font-size: 0.75rem;\n    word-break: break-all;\n }\n"],
+  "mappings": "AAEA,CAAA,SACI,MAAA,KACA,OAAA,KACA,SAAA,SACA,IAAA,KACA,KAAA,KAGJ,CAAA,gBACI,OAAA,IAEA,CAHJ,gBAGI,CAAA,SACI,MAAA,IAAA,2BACA,iBAAA,YAIR,CAAA,oBACI,WAAA,IAAA,2BAlBJ,cAmBI,IACA,SAAA,SAGJ,CAAA,eACI,SAAA,SACA,IAAA,IACA,KAAA,MACA,MAAA,EACA,OAAA,EACA,aAAA,MACA,aAAA,EAAA,IAAA,+BAAA,IAAA,+BAAA,EACA,aAAA,YAAA,IAAA,iBAAA,YAAA,YAGJ,CAAA,0BACI,UAAA,OACA,WAAA",
+  "names": []
+}

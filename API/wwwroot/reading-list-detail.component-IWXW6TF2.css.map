@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/reading-list/_components/reading-list-detail/reading-list-detail.component.scss"],
+  "sourcesContent": [".content-container {\n    width: 100%;\n}\n\n.non-virtualized-container {\n    width: 100%;\n    max-height: 140px;\n    height: 140px;\n}\n\n.dropdown-toggle-split {\n    border-top-right-radius: 6px !important;\n    border-bottom-right-radius: 6px !important;\n    border-top-left-radius: 0px !important;\n    border-bottom-left-radius: 0px !important;\n}\n\n.reading-list-years {\n    color: var(--input-placeholder-color);\n}\n\n.scroll-container {\n    display: flex;\n    flex-direction: row;\n    width: 100%;\n    height: calc((var(--vh) *100) - 173px);\n    margin-bottom: 10px;\n  \n    &.empty {\n        height: auto;\n    }\n}"],
+  "mappings": "AAAA,CAAA,kBACI,MAAA,KAGJ,CAAA,0BACI,MAAA,KACA,WAAA,MACA,OAAA,MAGJ,CAAA,sBACI,cAEA,EAFA,IACA,IAEA,EADA,IAFA,IACA,IAEA,cAGJ,CAAA,mBACI,MAAA,IAAA,2BAGJ,CAAA,iBACI,QAAA,KACA,eAAA,IACA,MAAA,KACA,OAAA,KAAA,IAAA,MAAA,EAAA,IAAA,EAAA,OACA,cAAA,KAEA,CAPJ,gBAOI,CAAA,MACI,OAAA",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/_models/preferences/pdf-theme.ts", "src/app/_models/preferences/pdf-scroll-mode.ts", "src/app/_models/preferences/pdf-layout-mode.ts", "src/app/_models/preferences/pdf-spread-mode.ts"],
+  "sourcesContent": ["export enum PdfTheme{\n  Dark = 0,\n  Light = 1\n}\n", "export enum PdfScrollMode {\n  Vertical = 0,\n  Horizontal = 1,\n  Wrapped = 2,\n  Page = 3\n}\n", "export enum PdfLayoutMode {\n  Multiple = 0,\n  Single = 1,\n  Book = 2,\n  InfiniteScroll = 3\n}\n", "export enum PdfSpreadMode {\n  None = 0,\n  Odd = 1,\n  Even = 2\n}\n"],
+  "mappings": "AAAA,IAAYA,EAAZ,SAAYA,EAAQ,CAClBA,OAAAA,EAAAA,EAAA,KAAA,CAAA,EAAA,OACAA,EAAAA,EAAA,MAAA,CAAA,EAAA,QAFUA,CAGZ,EAHYA,GAAQ,CAAA,CAAA,ECApB,IAAYC,EAAZ,SAAYA,EAAa,CACvBA,OAAAA,EAAAA,EAAA,SAAA,CAAA,EAAA,WACAA,EAAAA,EAAA,WAAA,CAAA,EAAA,aACAA,EAAAA,EAAA,QAAA,CAAA,EAAA,UACAA,EAAAA,EAAA,KAAA,CAAA,EAAA,OAJUA,CAKZ,EALYA,GAAa,CAAA,CAAA,ECAzB,IAAYC,EAAZ,SAAYA,EAAa,CACvBA,OAAAA,EAAAA,EAAA,SAAA,CAAA,EAAA,WACAA,EAAAA,EAAA,OAAA,CAAA,EAAA,SACAA,EAAAA,EAAA,KAAA,CAAA,EAAA,OACAA,EAAAA,EAAA,eAAA,CAAA,EAAA,iBAJUA,CAKZ,EALYA,GAAa,CAAA,CAAA,ECAzB,IAAYC,EAAZ,SAAYA,EAAa,CACvBA,OAAAA,EAAAA,EAAA,KAAA,CAAA,EAAA,OACAA,EAAAA,EAAA,IAAA,CAAA,EAAA,MACAA,EAAAA,EAAA,KAAA,CAAA,EAAA,OAHUA,CAIZ,EAJYA,GAAa,CAAA,CAAA",
+  "names": ["PdfTheme", "PdfScrollMode", "PdfLayoutMode", "PdfSpreadMode"]
+}

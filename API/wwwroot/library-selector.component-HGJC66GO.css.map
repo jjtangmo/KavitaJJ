@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/admin/library-selector/library-selector.component.scss"],
+  "sourcesContent": [".list-group-item {\n    border: none;\n}"],
+  "mappings": "AAAA,CAAA,gBACI,OAAA",
+  "names": []
+}

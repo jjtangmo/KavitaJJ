@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/statistics/_components/user-stats/user-stats.component.scss"],
+  "sourcesContent": [".fixed-row {\n  height: auto; // 242px;\n}\n"],
+  "mappings": "AAAA,CAAA,UACE,OAAA",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/person-badge/person-badge.component.scss"],
+  "sourcesContent": [".tagbadge {\n    background-color: var(--tagbadge-bg-color);\n    transition: all .3s ease-out;\n    margin: 3px 5px 3px 0px;\n    padding: 2px 10px;\n    border-radius: 6px;\n    font-size: 14px;\n    border: 1px solid var(--tagbadge-border-color);\n    display: inline-block;\n    cursor: pointer;\n    width: auto;\n\n    i {\n        font-size: 14px;\n        font-weight: bold;\n        margin-right: 0px;\n        cursor: pointer;\n    }\n}\n"],
+  "mappings": "AAAA,CAAA,SACI,iBAAA,IAAA,qBACA,WAAA,IAAA,IAAA,SAFJ,OAGI,IAAA,IAAA,IAAA,EAHJ,QAII,IAAA,KAJJ,cAKI,IACA,UAAA,KACA,OAAA,IAAA,MAAA,IAAA,yBACA,QAAA,aACA,OAAA,QACA,MAAA,KAEA,CAZJ,SAYI,EACI,UAAA,KACA,YAAA,IACA,aAAA,EACA,OAAA",
+  "names": []
+}

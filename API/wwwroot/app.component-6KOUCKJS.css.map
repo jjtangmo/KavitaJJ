@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/app.component.scss"],
+  "sourcesContent": [".content-wrapper {\n    padding: 0 10px 0;\n    height: 100%;\n}\n\n.companion-bar {\n    transition: all var(--side-nav-companion-bar-transistion);\n    margin-left: 40px;\n}\n\n.companion-bar-content {\n    margin-left: 190px;\n    width: auto;\n}\n\n@media (max-width: 576px) {\n    .container-fluid {\n        padding: 0;\n    }\n\n    .content-wrapper {\n        padding: 0 5px 0;\n        overflow: hidden;\n        height: calc(100vh - 56px);\n\n        &.closed {\n            overflow: auto;\n        }\n    }\n\n    .companion-bar {\n        margin-left: 0px;\n        padding-left: 0px;\n    }\n\n    .companion-bar-content {\n        margin-left: 0px;\n        width: auto;\n    }\n}\n"],
+  "mappings": "AAAA,CAAA,gBAAA,QACI,EAAA,KACA,OAAA,KAGJ,CAAA,cACI,WAAA,IAAA,IAAA,sCACA,YAAA,KAGJ,CAAA,sBACI,YAAA,MACA,MAAA,KAGJ,OAAA,CAAA,SAAA,EAAA,OACI,CAAA,gBAhBJ,QAiBQ,EAGJ,CApBJ,gBAAA,QAqBQ,EAAA,IACA,SAAA,OACA,OAAA,KAAA,MAAA,EAAA,MAEA,CAzBR,eAyBQ,CAAA,OACI,SAAA,KAIR,CAzBJ,cA0BQ,YAAA,EACA,aAAA,EAGJ,CAzBJ,sBA0BQ,YAAA,EACA,MAAA",
+  "names": []
+}

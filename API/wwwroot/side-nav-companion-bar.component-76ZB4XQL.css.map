@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/sidenav/_components/side-nav-companion-bar/side-nav-companion-bar.component.scss"],
+  "sourcesContent": [".hide-if-empty:empty {\n    display: none !important;\n}\n"],
+  "mappings": "AAAA,CAAA,aAAA,OACI,QAAA",
+  "names": []
+}

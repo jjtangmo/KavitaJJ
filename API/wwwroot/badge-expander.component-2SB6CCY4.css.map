@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/badge-expander/badge-expander.component.scss"],
+  "sourcesContent": [".content {\n    width: 100%;\n}\n\n.collapsed {\n    height: 35px;\n    overflow: hidden;\n}"],
+  "mappings": "AAAA,CAAA,QACI,MAAA,KAGJ,CAAA,UACI,OAAA,KACA,SAAA",
+  "names": []
+}

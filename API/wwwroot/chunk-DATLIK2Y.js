@@ -1,0 +1,2 @@
+import{Dd as s,Hd as n,ka as r,pa as l}from"./chunk-2LHIXASS.js";var f=(()=>{let t=class t{constructor(e){this.httpClient=e,this.baseUrl=n.apiUrl}saveFilter(e){return this.httpClient.post(this.baseUrl+"filter/update",e)}getAllFilters(){return this.httpClient.get(this.baseUrl+"filter")}deleteFilter(e){return this.httpClient.delete(this.baseUrl+"filter?filterId="+e)}};t.\u0275fac=function(o){return new(o||t)(l(s))},t.\u0275prov=r({token:t,factory:t.\u0275fac,providedIn:"root"});let i=t;return i})();export{f as a};
+//# sourceMappingURL=chunk-DATLIK2Y.js.map

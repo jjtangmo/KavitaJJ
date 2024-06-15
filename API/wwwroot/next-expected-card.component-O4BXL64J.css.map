@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/cards/next-expected-card/next-expected-card.component.scss"],
+  "sourcesContent": ["::ng-deep .extreme-blur {\n  filter: brightness(50%) blur(4px)\n}\n\n.overlay-information {\n  background-color: transparent;\n}\n\n.upcoming-header {\n  font-size: 16px;\n}\n\n.card-title  {\n  width: 146px;\n}\n"],
+  "mappings": "AAAA,UAAA,CAAA,aACE,OAAA,WAAA,KAAA,KAAA,KAGF,CAAA,oBACE,iBAAA,YAGF,CAAA,gBACE,UAAA,KAGF,CAAA,WACE,MAAA",
+  "names": []
+}

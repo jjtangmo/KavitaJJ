@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/want-to-read/_components/want-to-read/want-to-read.component.scss"],
+  "sourcesContent": [".virtual-scroller, virtual-scroller {\n    width: 100%;\n    height: calc(100vh - 85px);\n    max-height: calc(var(--vh)*100 - 170px);\n  }\n  \n  // This is responsible for ensuring we scroll down and only tabs and companion bar is visible\n  .main-container {\n    // Height set dynamically by  get ScrollingBlockHeight()\n    overflow-y: auto;\n    position: relative;\n    overscroll-behavior-y: none;\n  }"],
+  "mappings": "AAAA,CAAA,iBAAA,iBACI,MAAA,KACA,OAAA,KAAA,MAAA,EAAA,MACA,WAAA,KAAA,IAAA,MAAA,EAAA,IAAA,EAAA,OAIF,CAAA,eAEE,WAAA,KACA,SAAA,SACA,sBAAA",
+  "names": []
+}

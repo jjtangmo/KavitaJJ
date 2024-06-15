@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/reading-list/_modals/add-to-list-modal/add-to-list-modal.component.scss"],
+  "sourcesContent": ["\n.clickable:hover, .clickable:focus {\n    background-color: var(--primary-color);\n}\n\n.scrollable-modal {\n    max-height: calc(var(--vh) * 100 - 198px);\n    overflow: auto;\n}\n"],
+  "mappings": "AACA,CAAA,SAAA,OAAA,CAAA,SAAA,OACI,iBAAA,IAAA,iBAGJ,CAAA,iBACI,WAAA,KAAA,IAAA,MAAA,EAAA,IAAA,EAAA,OACA,SAAA",
+  "names": []
+}
