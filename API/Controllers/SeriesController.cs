@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using API.Constants;
@@ -117,7 +117,7 @@ public class SeriesController : BaseApiController
     [HttpGet("{seriesId:int}")]
     public async Task<ActionResult<SeriesDto>> GetSeries(int seriesId)
     {
-        var series = await _unitOfWork.SeriesRepository.GetSeriesDtoByIdAsync(seriesId, User.GetUserId());
+        SeriesDto? series = await _unitOfWork.SeriesRepository.GetSeriesDtoByIdAsync(seriesId, User.GetUserId());
         if (series == null) return NoContent();
         return Ok(series);
     }

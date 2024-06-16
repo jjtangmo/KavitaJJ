@@ -201,13 +201,49 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\add-to-list-modal.component-SNVCN2P7.css.map" />
-    <None Include="wwwroot\all-collections.component-DVJ6ZQ7X.css.map" />
-    <None Include="wwwroot\all-filters.component-35GQ6JBC.css.map" />
-    <None Include="wwwroot\all-series.component-UFJSE4A4.css.map" />
-    <None Include="wwwroot\announcements.component-KVNGX3UO.css.map" />
-    <None Include="wwwroot\api-key.component-SHOTENOC.css.map" />
-    <None Include="wwwroot\app.component-6KOUCKJS.css.map" />
+    <None Update="config\themes\aquamarine.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="config\themes\brilliance.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="config\themes\cutepink.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="config\themes\darknight.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="config\themes\darkpink.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="config\themes\dracula.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="config\themes\e-ink.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="config\themes\light.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="config\themes\nord.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="config\themes\overseerr.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="config\themes\style.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="config\themes\solarized.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\assets\cmaps\78-EUC-H.bcmap" />
     <None Include="wwwroot\assets\cmaps\78-EUC-V.bcmap" />
     <None Include="wwwroot\assets\cmaps\78-H.bcmap" />
@@ -606,277 +642,6 @@
     <None Include="wwwroot\assets\viewer-4.0.721-es5.min.mjs" />
     <None Include="wwwroot\assets\viewer-4.0.721-es5.mjs" />
     <None Include="wwwroot\assets\viewer-4.0.721.min.mjs" />
-    <None Include="wwwroot\badge-expander.component-2SB6CCY4.css.map" />
-    <None Include="wwwroot\book-line-overlay.component-WFE2ZRSB.css.map" />
-    <None Include="wwwroot\book-reader.component-C5ZORFN6.css.map" />
-    <None Include="wwwroot\bookmarks.component-RISWOXWZ.css.map" />
-    <None Include="wwwroot\bulk-add-to-collection.component-F2ZHNINB.css.map" />
-    <None Include="wwwroot\bulk-operations.component-O2UJZ6RN.css.map" />
-    <None Include="wwwroot\canvas-renderer.component-Y5PY4VRZ.css.map" />
-    <None Include="wwwroot\card-actionables.component-LIRBAHNQ.css.map" />
-    <None Include="wwwroot\card-detail-drawer.component-UR7BRJNN.css.map" />
-    <None Include="wwwroot\card-detail-layout.component-FVFJSOIL.css.map" />
-    <None Include="wwwroot\card-item.component-7FF72MYQ.css.map" />
-    <None Include="wwwroot\carousel-reel.component-BJ7H3DDT.css.map" />
-    <None Include="wwwroot\change-age-restriction.component-BFOIV4TJ.css.map" />
-    <None Include="wwwroot\change-email.component-6WMLXU6J.css.map" />
-    <None Include="wwwroot\change-password.component-2ZNSGTCD.css.map" />
-    <None Include="wwwroot\changelog.component-57EKYLIU.css.map" />
-    <None Include="wwwroot\chapter-metadata-detail.component-4WHBOJNG.css.map" />
-    <None Include="wwwroot\chunk-23B3ZJIN.js" />
-    <None Include="wwwroot\chunk-23B3ZJIN.js.map" />
-    <None Include="wwwroot\chunk-2JQ3KAM5.js" />
-    <None Include="wwwroot\chunk-2JQ3KAM5.js.map" />
-    <None Include="wwwroot\chunk-2LHIXASS.js" />
-    <None Include="wwwroot\chunk-2LHIXASS.js.map" />
-    <None Include="wwwroot\chunk-3BBJCVEK.js" />
-    <None Include="wwwroot\chunk-3BBJCVEK.js.map" />
-    <None Include="wwwroot\chunk-3BSTNBRU.js" />
-    <None Include="wwwroot\chunk-3BSTNBRU.js.map" />
-    <None Include="wwwroot\chunk-3ZX5KB4R.js" />
-    <None Include="wwwroot\chunk-3ZX5KB4R.js.map" />
-    <None Include="wwwroot\chunk-46CIW37K.js" />
-    <None Include="wwwroot\chunk-46CIW37K.js.map" />
-    <None Include="wwwroot\chunk-4XR5JJUF.js" />
-    <None Include="wwwroot\chunk-4XR5JJUF.js.map" />
-    <None Include="wwwroot\chunk-5CMEBAZF.js" />
-    <None Include="wwwroot\chunk-5CMEBAZF.js.map" />
-    <None Include="wwwroot\chunk-5D3NDSFD.js" />
-    <None Include="wwwroot\chunk-5D3NDSFD.js.map" />
-    <None Include="wwwroot\chunk-5JNCF2FD.js" />
-    <None Include="wwwroot\chunk-5JNCF2FD.js.map" />
-    <None Include="wwwroot\chunk-5TIUG6K2.js" />
-    <None Include="wwwroot\chunk-5TIUG6K2.js.map" />
-    <None Include="wwwroot\chunk-5XQ66AVT.js" />
-    <None Include="wwwroot\chunk-5XQ66AVT.js.map" />
-    <None Include="wwwroot\chunk-63UKDQJP.js" />
-    <None Include="wwwroot\chunk-63UKDQJP.js.map" />
-    <None Include="wwwroot\chunk-6SSGNI4N.js" />
-    <None Include="wwwroot\chunk-6SSGNI4N.js.map" />
-    <None Include="wwwroot\chunk-6UQRQD2S.js" />
-    <None Include="wwwroot\chunk-6UQRQD2S.js.map" />
-    <None Include="wwwroot\chunk-76TOP2FJ.js" />
-    <None Include="wwwroot\chunk-76TOP2FJ.js.map" />
-    <None Include="wwwroot\chunk-7RIKHQP6.js" />
-    <None Include="wwwroot\chunk-7RIKHQP6.js.map" />
-    <None Include="wwwroot\chunk-7TUZOV5N.js" />
-    <None Include="wwwroot\chunk-7TUZOV5N.js.map" />
-    <None Include="wwwroot\chunk-7UPYM5OM.js" />
-    <None Include="wwwroot\chunk-7UPYM5OM.js.map" />
-    <None Include="wwwroot\chunk-ANKUG2J7.js" />
-    <None Include="wwwroot\chunk-ANKUG2J7.js.map" />
-    <None Include="wwwroot\chunk-AZ5T37FH.js" />
-    <None Include="wwwroot\chunk-AZ5T37FH.js.map" />
-    <None Include="wwwroot\chunk-C2T36BOI.js" />
-    <None Include="wwwroot\chunk-C2T36BOI.js.map" />
-    <None Include="wwwroot\chunk-CASH644A.js" />
-    <None Include="wwwroot\chunk-CASH644A.js.map" />
-    <None Include="wwwroot\chunk-CIDLU7ZZ.js" />
-    <None Include="wwwroot\chunk-CIDLU7ZZ.js.map" />
-    <None Include="wwwroot\chunk-CMA4NIL4.js" />
-    <None Include="wwwroot\chunk-CMA4NIL4.js.map" />
-    <None Include="wwwroot\chunk-CNATNHH2.js" />
-    <None Include="wwwroot\chunk-CNATNHH2.js.map" />
-    <None Include="wwwroot\chunk-COKVODYN.js" />
-    <None Include="wwwroot\chunk-COKVODYN.js.map" />
-    <None Include="wwwroot\chunk-D4OEEFU2.js" />
-    <None Include="wwwroot\chunk-D4OEEFU2.js.map" />
-    <None Include="wwwroot\chunk-DATLIK2Y.js" />
-    <None Include="wwwroot\chunk-DATLIK2Y.js.map" />
-    <None Include="wwwroot\chunk-DBXQZVFZ.js" />
-    <None Include="wwwroot\chunk-DBXQZVFZ.js.map" />
-    <None Include="wwwroot\chunk-DCNCHGLE.js" />
-    <None Include="wwwroot\chunk-DCNCHGLE.js.map" />
-    <None Include="wwwroot\chunk-DWLYUMMK.js" />
-    <None Include="wwwroot\chunk-DWLYUMMK.js.map" />
-    <None Include="wwwroot\chunk-E6ZKMAWP.js" />
-    <None Include="wwwroot\chunk-E6ZKMAWP.js.map" />
-    <None Include="wwwroot\chunk-EGRHWZRV.js" />
-    <None Include="wwwroot\chunk-EGRHWZRV.js.map" />
-    <None Include="wwwroot\chunk-FEVPSYU2.js" />
-    <None Include="wwwroot\chunk-FEVPSYU2.js.map" />
-    <None Include="wwwroot\chunk-FNXOSSP4.js" />
-    <None Include="wwwroot\chunk-FNXOSSP4.js.map" />
-    <None Include="wwwroot\chunk-FVF23ION.js" />
-    <None Include="wwwroot\chunk-FVF23ION.js.map" />
-    <None Include="wwwroot\chunk-G6W3CHAT.js" />
-    <None Include="wwwroot\chunk-G6W3CHAT.js.map" />
-    <None Include="wwwroot\chunk-GGQU56QW.js" />
-    <None Include="wwwroot\chunk-GGQU56QW.js.map" />
-    <None Include="wwwroot\chunk-GHDYTRII.js" />
-    <None Include="wwwroot\chunk-GHDYTRII.js.map" />
-    <None Include="wwwroot\chunk-GREZGXOD.js" />
-    <None Include="wwwroot\chunk-GREZGXOD.js.map" />
-    <None Include="wwwroot\chunk-HCNMYPLD.js" />
-    <None Include="wwwroot\chunk-HCNMYPLD.js.map" />
-    <None Include="wwwroot\chunk-HOUHXGPA.js" />
-    <None Include="wwwroot\chunk-HOUHXGPA.js.map" />
-    <None Include="wwwroot\chunk-I6T7P5FM.js" />
-    <None Include="wwwroot\chunk-I6T7P5FM.js.map" />
-    <None Include="wwwroot\chunk-IAMUJYOJ.js" />
-    <None Include="wwwroot\chunk-IAMUJYOJ.js.map" />
-    <None Include="wwwroot\chunk-IYLIANWB.js" />
-    <None Include="wwwroot\chunk-IYLIANWB.js.map" />
-    <None Include="wwwroot\chunk-K6JLHPZK.js" />
-    <None Include="wwwroot\chunk-K6JLHPZK.js.map" />
-    <None Include="wwwroot\chunk-KDUPSXXX.js" />
-    <None Include="wwwroot\chunk-KDUPSXXX.js.map" />
-    <None Include="wwwroot\chunk-KSGHIAYS.js" />
-    <None Include="wwwroot\chunk-KSGHIAYS.js.map" />
-    <None Include="wwwroot\chunk-KUE2MKW5.js" />
-    <None Include="wwwroot\chunk-KUE2MKW5.js.map" />
-    <None Include="wwwroot\chunk-KWNQHRPC.js" />
-    <None Include="wwwroot\chunk-KWNQHRPC.js.map" />
-    <None Include="wwwroot\chunk-LAUBKCQL.js" />
-    <None Include="wwwroot\chunk-LAUBKCQL.js.map" />
-    <None Include="wwwroot\chunk-M6Y4BTRD.js" />
-    <None Include="wwwroot\chunk-M6Y4BTRD.js.map" />
-    <None Include="wwwroot\chunk-MK37P623.js" />
-    <None Include="wwwroot\chunk-MK37P623.js.map" />
-    <None Include="wwwroot\chunk-MYEAJL5E.js" />
-    <None Include="wwwroot\chunk-MYEAJL5E.js.map" />
-    <None Include="wwwroot\chunk-N4WN7KHO.js" />
-    <None Include="wwwroot\chunk-N4WN7KHO.js.map" />
-    <None Include="wwwroot\chunk-N5KYQ6HC.js" />
-    <None Include="wwwroot\chunk-N5KYQ6HC.js.map" />
-    <None Include="wwwroot\chunk-OGXOVN5X.js" />
-    <None Include="wwwroot\chunk-OGXOVN5X.js.map" />
-    <None Include="wwwroot\chunk-OMT2OGRR.js" />
-    <None Include="wwwroot\chunk-OMT2OGRR.js.map" />
-    <None Include="wwwroot\chunk-OTUH3ALY.js" />
-    <None Include="wwwroot\chunk-OTUH3ALY.js.map" />
-    <None Include="wwwroot\chunk-OW5SHVKA.js" />
-    <None Include="wwwroot\chunk-OW5SHVKA.js.map" />
-    <None Include="wwwroot\chunk-OWYEASWT.js" />
-    <None Include="wwwroot\chunk-OWYEASWT.js.map" />
-    <None Include="wwwroot\chunk-OYN3AID3.js" />
-    <None Include="wwwroot\chunk-OYN3AID3.js.map" />
-    <None Include="wwwroot\chunk-QL7PCTRN.js" />
-    <None Include="wwwroot\chunk-QL7PCTRN.js.map" />
-    <None Include="wwwroot\chunk-QLG2M2JD.js" />
-    <None Include="wwwroot\chunk-QLG2M2JD.js.map" />
-    <None Include="wwwroot\chunk-R6ILOEDJ.js" />
-    <None Include="wwwroot\chunk-R6ILOEDJ.js.map" />
-    <None Include="wwwroot\chunk-RLL2TM5C.js" />
-    <None Include="wwwroot\chunk-RLL2TM5C.js.map" />
-    <None Include="wwwroot\chunk-SBPQBTA5.js" />
-    <None Include="wwwroot\chunk-SBPQBTA5.js.map" />
-    <None Include="wwwroot\chunk-SBTJKJNK.js" />
-    <None Include="wwwroot\chunk-SBTJKJNK.js.map" />
-    <None Include="wwwroot\chunk-SEAKSSGD.js" />
-    <None Include="wwwroot\chunk-SEAKSSGD.js.map" />
-    <None Include="wwwroot\chunk-SPNNO5LP.js" />
-    <None Include="wwwroot\chunk-SPNNO5LP.js.map" />
-    <None Include="wwwroot\chunk-STVWBYRJ.js" />
-    <None Include="wwwroot\chunk-STVWBYRJ.js.map" />
-    <None Include="wwwroot\chunk-T42ECNDU.js" />
-    <None Include="wwwroot\chunk-T42ECNDU.js.map" />
-    <None Include="wwwroot\chunk-TXAP7OV7.js" />
-    <None Include="wwwroot\chunk-TXAP7OV7.js.map" />
-    <None Include="wwwroot\chunk-U42B4V5B.js" />
-    <None Include="wwwroot\chunk-U42B4V5B.js.map" />
-    <None Include="wwwroot\chunk-UZJDSDY3.js" />
-    <None Include="wwwroot\chunk-UZJDSDY3.js.map" />
-    <None Include="wwwroot\chunk-V7YNUPX5.js" />
-    <None Include="wwwroot\chunk-V7YNUPX5.js.map" />
-    <None Include="wwwroot\chunk-VAE34R3W.js" />
-    <None Include="wwwroot\chunk-VAE34R3W.js.map" />
-    <None Include="wwwroot\chunk-W3BILLRV.js" />
-    <None Include="wwwroot\chunk-W3BILLRV.js.map" />
-    <None Include="wwwroot\chunk-WBO5KV4A.js" />
-    <None Include="wwwroot\chunk-WBO5KV4A.js.map" />
-    <None Include="wwwroot\chunk-WIQ43ZSS.js" />
-    <None Include="wwwroot\chunk-WIQ43ZSS.js.map" />
-    <None Include="wwwroot\chunk-WJJRKHHC.js" />
-    <None Include="wwwroot\chunk-WJJRKHHC.js.map" />
-    <None Include="wwwroot\chunk-WOOSLBNR.js" />
-    <None Include="wwwroot\chunk-WOOSLBNR.js.map" />
-    <None Include="wwwroot\chunk-XIOMQXAQ.js" />
-    <None Include="wwwroot\chunk-XIOMQXAQ.js.map" />
-    <None Include="wwwroot\chunk-Y2Z55DXS.js" />
-    <None Include="wwwroot\chunk-Y2Z55DXS.js.map" />
-    <None Include="wwwroot\chunk-YG7OKVFF.js" />
-    <None Include="wwwroot\chunk-YG7OKVFF.js.map" />
-    <None Include="wwwroot\chunk-YK7KIY5R.js" />
-    <None Include="wwwroot\chunk-YK7KIY5R.js.map" />
-    <None Include="wwwroot\chunk-ZCIXPP5E.js" />
-    <None Include="wwwroot\chunk-ZCIXPP5E.js.map" />
-    <None Include="wwwroot\chunk-ZRHV3LXB.js" />
-    <None Include="wwwroot\chunk-ZRHV3LXB.js.map" />
-    <None Include="wwwroot\chunk-ZTKUYOP3.js" />
-    <None Include="wwwroot\chunk-ZTKUYOP3.js.map" />
-    <None Include="wwwroot\circular-loader.component-TBPLICJJ.css.map" />
-    <None Include="wwwroot\collection-detail.component-B4WIW5XC.css.map" />
-    <None Include="wwwroot\collection-owner.component-37YMFU43.css.map" />
-    <None Include="wwwroot\confirm-dialog.component-Y7IEV2MY.css.map" />
-    <None Include="wwwroot\confirm-email-change.component-VX3XJ6BV.css.map" />
-    <None Include="wwwroot\confirm-email.component-7X5GEJYI.css.map" />
-    <None Include="wwwroot\confirm-migration-email.component-MEKEXV6X.css.map" />
-    <None Include="wwwroot\confirm-reset-password.component-BZJQMA2E.css.map" />
-    <None Include="wwwroot\cover-image-chooser.component-46I2DHEI.css.map" />
-    <None Include="wwwroot\customize-dashboard-modal.component-C7SG4DF6.css.map" />
-    <None Include="wwwroot\customize-dashboard-streams.component-FVEBIKQT.css.map" />
-    <None Include="wwwroot\customize-sidenav-streams.component-RY3WEYRP.css.map" />
-    <None Include="wwwroot\dashboard-stream-list-item.component-N5527VZ5.css.map" />
-    <None Include="wwwroot\dashboard.component-5AVST4RP.css.map" />
-    <None Include="wwwroot\dashboard.component-IICI7VRW.css.map" />
-    <None Include="wwwroot\day-breakdown.component-SQINEF3A.css.map" />
-    <None Include="wwwroot\directory-picker.component-ZTAZGF7P.css.map" />
-    <None Include="wwwroot\double-no-cover-renderer.component-5AZRKCMU.css.map" />
-    <None Include="wwwroot\double-renderer.component-CWN66N4M.css.map" />
-    <None Include="wwwroot\double-reverse-renderer.component-3CNDU7H3.css.map" />
-    <None Include="wwwroot\download-indicator.component-GDIHBOFV.css.map" />
-    <None Include="wwwroot\draggable-ordered-list.component-Q5VWC4QI.css.map" />
-    <None Include="wwwroot\drawer.component-NRS5ZJH5.css.map" />
-    <None Include="wwwroot\edit-chapter-progress.component-NJJJWHHW.css.map" />
-    <None Include="wwwroot\edit-collection-tags.component-CZAXB5OO.css.map" />
-    <None Include="wwwroot\edit-device.component-NPKDK6DP.css.map" />
-    <None Include="wwwroot\edit-external-source-item.component-PBB3XP6H.css.map" />
-    <None Include="wwwroot\edit-list.component-2MJRBC6D.css.map" />
-    <None Include="wwwroot\edit-reading-list-modal.component-HTAZ3RET.css.map" />
-    <None Include="wwwroot\edit-series-modal.component-PVLLB57R.css.map" />
-    <None Include="wwwroot\edit-series-relation.component-EUCZKYZI.css.map" />
-    <None Include="wwwroot\edit-user.component-UCONTETX.css.map" />
-    <None Include="wwwroot\entity-info-cards.component-C7O5HADN.css.map" />
-    <None Include="wwwroot\entity-title.component-DFJTX5SF.css.map" />
-    <None Include="wwwroot\events-widget.component-3OXKI6NA.css.map" />
-    <None Include="wwwroot\external-list-item.component-A4FIHFNZ.css.map" />
-    <None Include="wwwroot\external-rating.component-VUO7ZOU7.css.map" />
-    <None Include="wwwroot\external-series-card.component-455IUA5L.css.map" />
-    <None Include="wwwroot\file-breakdown-stats.component-I4VKUX5T.css.map" />
-    <None Include="wwwroot\generic-list-modal.component-36J2SYMN.css.map" />
-    <None Include="wwwroot\generic-table-modal.component-VET4GAVK.css.map" />
-    <None Include="wwwroot\grouped-typeahead.component-3ROGJ3TJ.css.map" />
-    <None Include="wwwroot\icon-and-title.component-N2JFYOCA.css.map" />
-    <None Include="wwwroot\image.component-DTUQVIGI.css.map" />
-    <None Include="wwwroot\import-cbl-modal.component-G7LE5C7G.css.map" />
-    <None Include="wwwroot\import-mal-collection-modal.component-URAI6EPX.css.map" />
-    <None Include="wwwroot\infinite-scroller.component-EIKCXUPE.css.map" />
-    <None Include="wwwroot\invite-user.component-574N2VHX.css.map" />
-    <None Include="wwwroot\kavitaplus-metadata-breakdown-stats.component-D6AEVVMA.css.map" />
-    <None Include="wwwroot\library-detail.component-SOM4LPYA.css.map" />
-    <None Include="wwwroot\library-selector.component-HGJC66GO.css.map" />
-    <None Include="wwwroot\library-settings-modal.component-RALEQG7Z.css.map" />
-    <None Include="wwwroot\license.component-NOZQPVGC.css.map" />
-    <None Include="wwwroot\list-item.component-PAQD3LVA.css.map" />
-    <None Include="wwwroot\loading.component-53HJP2AQ.css.map" />
-    <None Include="wwwroot\main-CJ6QNG7N.js" />
-    <None Include="wwwroot\main-CJ6QNG7N.js.map" />
-    <None Include="wwwroot\manage-alerts.component-ZWHF4FVU.css.map" />
-    <None Include="wwwroot\manage-devices.component-SVUC6WZR.css.map" />
-    <None Include="wwwroot\manage-email-settings.component-ICGWDK2G.css.map" />
-    <None Include="wwwroot\manage-external-sources.component-ATCU6KXQ.css.map" />
-    <None Include="wwwroot\manage-library.component-QHQN5VJ4.css.map" />
-    <None Include="wwwroot\manage-logs.component-B4ATT437.css.map" />
-    <None Include="wwwroot\manage-media-settings.component-7Q5QGM2P.css.map" />
-    <None Include="wwwroot\manage-scrobble-errors.component-UWJE5T3G.css.map" />
-    <None Include="wwwroot\manage-scrobbling-providers.component-BULQOYIY.css.map" />
-    <None Include="wwwroot\manage-settings.component-SKL4PFAT.css.map" />
-    <None Include="wwwroot\manage-smart-filters.component-YMLWNF7J.css.map" />
-    <None Include="wwwroot\manage-system.component-3E6PA36Q.css.map" />
-    <None Include="wwwroot\manage-tasks-settings.component-UUVYVKUP.css.map" />
-    <None Include="wwwroot\manage-users.component-F5MJUCP2.css.map" />
-    <None Include="wwwroot\manga-reader.component-QZNJUNKW.css.map" />
     <None Include="wwwroot\media\EBGaramond-VariableFont_wght-H3BLDABA.woff2" />
     <None Include="wwwroot\media\fa-brands-400-4RSXLDQT.woff2" />
     <None Include="wwwroot\media\fa-regular-400-6ODLNN6G.woff2" />
@@ -893,109 +658,6 @@
     <None Include="wwwroot\media\Sarabun-N2KKBKWX.woff2" />
     <None Include="wwwroot\media\Spartan-VariableFont_wght-NM2LR5HQ.woff2" />
     <None Include="wwwroot\media\THSarabunNewest2-26H6ECW5.woff2" />
-    <None Include="wwwroot\metadata-builder.component-P2BJUT3Q.css.map" />
-    <None Include="wwwroot\metadata-detail.component-YSOJAAI4.css.map" />
-    <None Include="wwwroot\metadata-filter-row.component-6UXZPFWY.css.map" />
-    <None Include="wwwroot\metadata-filter.component-CYEGCJ7E.css.map" />
-    <None Include="wwwroot\nav-header.component-F3BLT4NT.css.map" />
-    <None Include="wwwroot\next-expected-card.component-O4BXL64J.css.map" />
-    <None Include="wwwroot\out-of-date-modal.component-5TA3T7CO.css.map" />
-    <None Include="wwwroot\pdf-reader.component-PFUDTRH6.css.map" />
-    <None Include="wwwroot\person-badge.component-LYCDRKP6.css.map" />
-    <None Include="wwwroot\personal-table-of-contents.component-5ZOG5Y2T.css.map" />
-    <None Include="wwwroot\polyfills-XMPOVFHB.js" />
-    <None Include="wwwroot\polyfills-XMPOVFHB.js.map" />
-    <None Include="wwwroot\promoted-icon.component-6K2HTRBK.css.map" />
-    <None Include="wwwroot\publication-status-stats.component-45HICVPZ.css.map" />
-    <None Include="wwwroot\read-more.component-XQF6LRJW.css.map" />
-    <None Include="wwwroot\reader-settings.component-JV2LYK36.css.map" />
-    <None Include="wwwroot\reading-activity.component-27GLIAO6.css.map" />
-    <None Include="wwwroot\reading-list-detail.component-IWXW6TF2.css.map" />
-    <None Include="wwwroot\reading-list-item.component-VMGZU3UI.css.map" />
-    <None Include="wwwroot\reading-lists.component-7FWU4DS3.css.map" />
-    <None Include="wwwroot\register.component-EYSYNCYF.css.map" />
-    <None Include="wwwroot\reset-password-modal.component-ZF2QSERR.css.map" />
-    <None Include="wwwroot\reset-password.component-YZ42BHAZ.css.map" />
-    <None Include="wwwroot\restriction-selector.component-UTQTLHEZ.css.map" />
-    <None Include="wwwroot\review-card-modal.component-JS2GJQT6.css.map" />
-    <None Include="wwwroot\review-card.component-34EUZ2UW.css.map" />
-    <None Include="wwwroot\review-series-modal.component-UEEP56DS.css.map" />
-    <None Include="wwwroot\role-selector.component-VO67KA6S.css.map" />
-    <None Include="wwwroot\series-card.component-CHSPYNO6.css.map" />
-    <None Include="wwwroot\series-detail.component-Y73FQMDF.css.map" />
-    <None Include="wwwroot\series-format.component-V24BASKY.css.map" />
-    <None Include="wwwroot\series-info-cards.component-6N2DKVKB.css.map" />
-    <None Include="wwwroot\series-metadata-detail.component-XKP5XP5A.css.map" />
-    <None Include="wwwroot\series-preview-drawer.component-4AMRYLM7.css.map" />
-    <None Include="wwwroot\server-stats.component-3CTTIHWW.css.map" />
-    <None Include="wwwroot\shortcuts-modal.component-B4FKMW6N.css.map" />
-    <None Include="wwwroot\side-nav-companion-bar.component-76ZB4XQL.css.map" />
-    <None Include="wwwroot\side-nav-item.component-NVKXHYF6.css.map" />
-    <None Include="wwwroot\side-nav.component-7FXNZKWI.css.map" />
-    <None Include="wwwroot\sidenav-stream-list-item.component-7HPN2K2B.css.map" />
-    <None Include="wwwroot\single-renderer.component-YVWS2QHQ.css.map" />
-    <None Include="wwwroot\site.webmanifest" />
-    <None Include="wwwroot\splash-container.component-7MVJSNFW.css.map" />
-    <None Include="wwwroot\spoiler.component-AYFC3J2T.css.map" />
-    <None Include="wwwroot\stat-list.component-AGSRWEEY.css.map" />
-    <None Include="wwwroot\step-tracker.component-TMLSTJ7Z.css.map" />
-    <None Include="wwwroot\styles-ANDYQ6SP.css.map" />
-    <None Include="wwwroot\table-of-contents.component-KBWWPMZQ.css.map" />
-    <None Include="wwwroot\tag-badge.component-NGYBNNRG.css.map" />
-    <None Include="wwwroot\theme-manager.component-64TM5HQO.css.map" />
-    <None Include="wwwroot\top-readers.component-2OFJLMPK.css.map" />
-    <None Include="wwwroot\typeahead.component-NF6DT4T2.css.map" />
-    <None Include="wwwroot\update-notification-modal.component-ICNNLBSN.css.map" />
-    <None Include="wwwroot\user-holds.component-BB5LBIVC.css.map" />
-    <None Include="wwwroot\user-login.component-GBGUZZWJ.css.map" />
-    <None Include="wwwroot\user-preferences.component-NIJB4C2K.css.map" />
-    <None Include="wwwroot\user-scrobble-history.component-2F2UW23U.css.map" />
-    <None Include="wwwroot\user-stats-info-cards.component-BYAZ2Y4Z.css.map" />
-    <None Include="wwwroot\user-stats.component-SV72R4YP.css.map" />
-    <None Include="wwwroot\want-to-read.component-4ASRY2ML.css.map" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="config\themes\aquamarine.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="config\themes\brilliance.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="config\themes\cutepink.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="config\themes\darknight.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="config\themes\darkpink.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="config\themes\dracula.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="config\themes\e-ink.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="config\themes\light.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="config\themes\nord.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="config\themes\overseerr.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="config\themes\style.scss">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="config\themes\solarized.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
   </ItemGroup>
 
 </Project>

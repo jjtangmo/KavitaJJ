@@ -523,8 +523,6 @@ public class SeriesService : ISeriesService
     /// <returns></returns>
     public static bool RenameVolumeName(VolumeDto volume, LibraryType libraryType, string volumeLabel = "Volume")
     {
-        return true;
-        //orignal 
         if (libraryType is LibraryType.Book or LibraryType.LightNovel)
         {
             var firstChapter = volume.Chapters.First();
@@ -557,6 +555,9 @@ public class SeriesService : ISeriesService
 
         if (isSpecial)
         {
+            //jjmod
+            return chapterTitle;
+            //original
             return Parser.CleanSpecialTitle(chapterTitle!);
         }
 
