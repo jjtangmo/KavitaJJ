@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -523,6 +523,8 @@ public class SeriesService : ISeriesService
     /// <returns></returns>
     public static bool RenameVolumeName(VolumeDto volume, LibraryType libraryType, string volumeLabel = "Volume")
     {
+        return true;
+        //orignal 
         if (libraryType is LibraryType.Book or LibraryType.LightNovel)
         {
             var firstChapter = volume.Chapters.First();

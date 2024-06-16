@@ -374,7 +374,7 @@ public class SeriesRepository : ISeriesRepository {
             .Where(s => libraryIds.Contains(s.LibraryId))
             .Where(s => terms.Any(term =>
                             EF.Functions.Like(s.Name, "%" +term+ "%")
-                            //EF.Functions.Like(s.Name, $"%{searchQuery}%")
+                         //EF.Functions.Like(s.Name, $"%{searchQuery}%")
                          || (s.OriginalName != null && EF.Functions.Like(s.OriginalName, $"%{searchQuery}%"))
                          || (s.LocalizedName != null && EF.Functions.Like(s.LocalizedName, $"%{searchQuery}%"))
                          || (EF.Functions.Like(s.NormalizedName, $"%{searchQueryNormalized}%"))

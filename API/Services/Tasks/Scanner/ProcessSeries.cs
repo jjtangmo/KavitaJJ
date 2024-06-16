@@ -109,6 +109,8 @@ public class ProcessSeries : IProcessSeries {
         var scanWatch = Stopwatch.StartNew();
         var seriesName = parsedInfos[0].Series;
 
+        MeModFunction.RejectVolumes(parsedInfos);
+
         await _eventHub.SendMessageAsync(MessageFactory.NotificationProgress,
             MessageFactory.LibraryScanProgressEvent(library.Name, ProgressEventType.Updated, seriesName));
         _logger.LogInformation("[ScannerService] Beginning series update on {SeriesName}, Forced: {ForceUpdate}", seriesName, forceUpdate);
@@ -222,7 +224,7 @@ public class ProcessSeries : IProcessSeries {
         await _metadataService.GenerateCoversForSeries(series, settings.EncodeMediaAs, settings.CoverImageSize);
         // BackgroundJob.Enqueue(() => _wordCountAnalyzerService.ScanSeries(series.LibraryId, series.Id, forceUpdate));
         await _wordCountAnalyzerService.ScanSeries(series.LibraryId, series.Id, forceUpdate);
-        
+
     }
 
 
@@ -292,7 +294,7 @@ public class ProcessSeries : IProcessSeries {
         if(firstFile == null)
             return;
         if(Parser.Parser.IsPdf(firstFile.FilePath)) {
-            await MeModFunction.MangaSeriesGetMetaDataFromComicInfoXML_Pdf(series, library, _tagManagerService);
+            await MeModFunction.MangaSeriesGetMetaDataFromComicInfoXML_Pdf(series, library, _tagManagerService, _unitOfWork);
             return;
         }
         var chapters = series.Volumes.SelectMany(volume => volume.Chapters).ToList();
@@ -647,6 +649,7 @@ public class ProcessSeries : IProcessSeries {
             chapter.MinNumber = Parser.Parser.MinNumberFromRange(info.Chapters);
             chapter.MaxNumber = Parser.Parser.MaxNumberFromRange(info.Chapters);
             if(!chapter.SortOrderLocked) {
+                //chapter.SortOrder = info.IssueOrder;
                 chapter.SortOrder = info.IssueOrder;
             }
             chapter.Range = chapter.GetNumberTitle();

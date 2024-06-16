@@ -42,28 +42,33 @@ public static class MeModFunction {
         return parserInfo;
     }
 
-  
+    public static void RejectVolumes(IList<ParserInfo> parsedInfos)
+    {
+        //var seriesName = parsedInfos[0].Series;
+        int index = 1;
+        var infoSorts = parsedInfos.OrderByNatural(p => p.Title).ToList();
+        foreach(var info in infoSorts) {
+            //if(!info.Filename.Contains(seriesName))
+            info.IssueOrder = index;
+            info.SpecialIndex = index;
+            info.IsSpecial = true;
+            info.Volumes = $"-100000";
+            index++;
+        }
+        //parsedInfos = parsedInfos.OrderByNatural(p => p.Filename).ToList();
+    }
 
-    public static async Task MangaSeriesGetMetaDataFromComicInfoXML_Pdf(Series series, Library library, ITagManagerService _tagManagerService)
+
+    public static async Task MangaSeriesGetMetaDataFromComicInfoXML_Pdf(Series series, Library library, ITagManagerService _tagManagerService, Data.IUnitOfWork _unitOfWork)
     {
         string[] libPaths = library.Folders.Select(p => p.Path).ToArray();
-        //string folderPath = series.FolderPath!;
-        //foreach(var libPath in libPaths) {
-        //    folderPath = folderPath.Replace(libPath, "");
-        //    folderPath = folderPath.Replace($"{libPath}/".Replace("/","\\"), "");
-        //    folderPath = folderPath.Replace($"{libPath}\\".Replace("\\", "/"), "");
-        //}
-        string comicInfoPath = $"{series.FolderPath}/ComicInfo.xml";
-        //series.Name = folderPath;
-        //series.OriginalName = folderPath;
-        //series.SortName = folderPath;
-        //series.LocalizedName = folderPath;
-        //series.NormalizedName = folderPath.ToNormalized();
+
+        string comicInfoPath = Path.Combine(series.FolderPath,"ComicInfo.xml");
         if(!File.Exists(comicInfoPath))
             return;
         ComicInfo? comicInfo = GetComicInfoFromFile(comicInfoPath);
         if(comicInfo == null)
-            return;        
+            return;
         var tags = TagHelper.GetTagValues(comicInfo.Tags);
         TagHelper.KeepOnlySameTagBetweenLists(series.Metadata.Tags, tags.Select(t => new TagBuilder(t).Build()).ToList());
         foreach(var tag in tags) {
@@ -82,6 +87,23 @@ public static class MeModFunction {
                 series.Metadata.Genres.Add(g);
             }
         }
+
+        if(!string.IsNullOrEmpty(comicInfo.Writer)) {
+            var people = TagHelper.GetTagValues(comicInfo.Writer);
+            foreach(var person in people) {
+                string personNormalized = person.ToNormalized();
+                var writer_exists = await _unitOfWork.PersonRepository.GetAllPeopleByRoleAndNames(PersonRole.Writer, [personNormalized]);
+                if(writer_exists.Count > 0)
+                    PersonHelper.AddPersonIfNotExists(series.Metadata.People, writer_exists.First());
+                else {
+                    var peopleBuilder = new PersonBuilder(person,  PersonRole.Writer);
+                    var writer_new = peopleBuilder.Build();
+                    _unitOfWork.PersonRepository.Attach(writer_new);
+                    PersonHelper.AddPersonIfNotExists(series.Metadata.People, writer_new);
+                }
+            }
+        }
+
         series.Metadata.Summary = comicInfo.Summary;
         if(!series.Metadata.PublicationStatusLocked) {
             string statusnormalized = comicInfo.Status.ToNormalized();

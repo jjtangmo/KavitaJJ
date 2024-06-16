@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -106,24 +106,25 @@ public class CollectionTagRepository : ICollectionTagRepository
     public async Task<IEnumerable<AppUserCollectionDto>> GetCollectionDtosAsync(int userId, bool includePromoted = false)
     {
         var ageRating = await _context.AppUser.GetUserAgeRestriction(userId);
-        return await _context.AppUserCollection
+        var list = await _context.AppUserCollection
             .Where(uc => uc.AppUserId == userId || (includePromoted && uc.Promoted))
             .WhereIf(ageRating.AgeRating != AgeRating.NotApplicable, uc => uc.AgeRating <= ageRating.AgeRating)
             .OrderBy(uc => uc.Title)
             .ProjectTo<AppUserCollectionDto>(_mapper.ConfigurationProvider)
             .ToListAsync();
+        return list.OrderByNatural(p => p.Title);
     }
 
     public async Task<IEnumerable<AppUserCollectionDto>> GetCollectionDtosBySeriesAsync(int userId, int seriesId, bool includePromoted = false)
     {
         var ageRating = await _context.AppUser.GetUserAgeRestriction(userId);
-        return await _context.AppUserCollection
+        var list = await _context.AppUserCollection
             .Where(uc => uc.AppUserId == userId || (includePromoted && uc.Promoted))
             .Where(uc => uc.Items.Any(s => s.Id == seriesId))
-            .WhereIf(ageRating.AgeRating != AgeRating.NotApplicable, uc => uc.AgeRating <= ageRating.AgeRating)
-            .OrderBy(uc => uc.Title)
+            .WhereIf(ageRating.AgeRating != AgeRating.NotApplicable, uc => uc.AgeRating <= ageRating.AgeRating)    
             .ProjectTo<AppUserCollectionDto>(_mapper.ConfigurationProvider)
             .ToListAsync();
+        return list.OrderByNatural(p => p.Title);
     }
 
     public async Task<string?> GetCoverImageAsync(int collectionTagId)
