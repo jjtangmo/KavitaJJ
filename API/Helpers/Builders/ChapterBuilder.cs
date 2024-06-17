@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -38,9 +38,8 @@ public class ChapterBuilder : IEntityBuilder<Chapter>
 
         return builder.WithNumber(Parser.RemoveExtensionIfSupported(info.Chapters)!)
             .WithRange(specialTreatment ? info.Filename : info.Chapters)
-            .WithTitle((specialTreatment && info.Format == MangaFormat.Epub)
-            ? info.Title
-            : specialTitle)
+            //.WithTitle((specialTreatment && info.Format == MangaFormat.Epub)? info.Title: specialTitle)
+            .WithTitle(info.Title)
             .WithIsSpecial(specialTreatment);
     }
 

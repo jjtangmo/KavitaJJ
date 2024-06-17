@@ -970,7 +970,7 @@ public static class Parser
 
     public static string CleanTitle(string title, bool isComic = false, bool replaceSpecials = true)
     {
-
+        return MeModFunction.RejectCleanSpecialTitleSeries(title);
         title = ReplaceUnderscores(title);
 
         title = RemoveEditionTagHolders(title);

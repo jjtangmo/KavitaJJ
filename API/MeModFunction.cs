@@ -58,6 +58,15 @@ public static class MeModFunction {
         //parsedInfos = parsedInfos.OrderByNatural(p => p.Filename).ToList();
     }
 
+    public static string RejectCleanSpecialChapterTitle(string chapterTitle)
+    {
+        return chapterTitle;
+    }
+
+    public static string RejectCleanSpecialTitleSeries(string chapterTitle)
+    {
+        return chapterTitle;
+    }
 
     public static async Task MangaSeriesGetMetaDataFromComicInfoXML_Pdf(Series series, Library library, ITagManagerService _tagManagerService, Data.IUnitOfWork _unitOfWork)
     {

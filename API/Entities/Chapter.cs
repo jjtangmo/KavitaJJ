@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -155,9 +155,10 @@ public class Chapter : IEntityDate, IHasReadTimeEstimate
             MaxNumber = Parser.DefaultChapterNumber;
         }
         // NOTE: This doesn't work well for all because Pdf usually should use into.Title or even filename
-        Title = (IsSpecial && info.Format == MangaFormat.Epub)
-            ? info.Title
-            : Parser.RemoveExtensionIfSupported(Range);
+        Title = info.Title;
+        //Title = (IsSpecial && info.Format == MangaFormat.Epub)
+        //    ? info.Title
+        //    : Parser.RemoveExtensionIfSupported(Range);
 
         var specialTreatment = info.IsSpecialInfo();
         Range = specialTreatment ? info.Filename : info.Chapters;

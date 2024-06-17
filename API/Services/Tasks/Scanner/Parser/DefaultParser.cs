@@ -122,9 +122,10 @@ public abstract class DefaultParser(IDirectoryService directoryService) : IDefau
             }
         }
 
+        string fallback_tag = string.Empty;
         for(var i = 0; i < fallbackFolders.Count; i++) {
             var folder = fallbackFolders[i];
-
+            
             var parsedVolume = Parser.ParseVolume(folder, type);
             var parsedChapter = Parser.ParseChapter(folder, type);
 
@@ -144,7 +145,11 @@ public abstract class DefaultParser(IDirectoryService directoryService) : IDefau
                 var series = Parser.ParseSeries(folder, type);
 
                 if(string.IsNullOrEmpty(series)) {
-                    ret.Series = Parser.CleanTitle(folder, type is LibraryType.Comic);
+                    string seriesTitle = Parser.CleanTitle(folder, type is LibraryType.Comic);
+                    ret.Series = seriesTitle;
+                    if(fallback_tag.Length > 0)
+                        fallback_tag = $"{fallback_tag} ";
+                    ret.Title = $"{fallback_tag}{ret.Title}";
                     break;
                 }
 
@@ -152,6 +157,8 @@ public abstract class DefaultParser(IDirectoryService directoryService) : IDefau
                     ret.Series = series;
                     break;
                 }
+            } else {
+                fallback_tag = $"[{folder}]{fallback_tag}";
             }
         }
     }

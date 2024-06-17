@@ -555,8 +555,7 @@ public class SeriesService : ISeriesService
 
         if (isSpecial)
         {
-            //jjmod
-            return chapterTitle;
+            return MeModFunction.RejectCleanSpecialChapterTitle(chapterTitle!);
             //original
             return Parser.CleanSpecialTitle(chapterTitle!);
         }
