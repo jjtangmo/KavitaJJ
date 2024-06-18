@@ -106,7 +106,7 @@ public abstract class DefaultParser(IDirectoryService directoryService) : IDefau
         var fallbackFolders = directoryService.GetFoldersTillRoot(libraryRoot, filePath)
             .Where(f => !Parser.IsSpecial(f, type))
             .ToList();
-
+        
         if(fallbackFolders.Count == 0) {
             var rootFolderName = directoryService.FileSystem.DirectoryInfo.New(rootPath).Name;
             var series = Parser.ParseSeries(rootFolderName, type);
@@ -149,7 +149,7 @@ public abstract class DefaultParser(IDirectoryService directoryService) : IDefau
                     ret.Series = seriesTitle;
                     if(fallback_tag.Length > 0)
                         fallback_tag = $"{fallback_tag} ";
-                    ret.Title = $"{fallback_tag}{ret.Title}";
+                    ret.Title = $"{ret.Title} {fallback_tag}";
                     break;
                 }
 
